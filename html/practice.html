@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/sidebar.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/practice.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="icon" href="../img/common/logo-white.jpg" type="image/png" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Stringo</title>
+  </head>
+
+  <body class="flex flex-col min-h-screen">
+    <!-- Top nav (mobile) -->
+    <div
+      id="topNav"
+      class="fixed flex justify-center items-center w-full h-12 bg-[image:var(--grad-card-3)] shadow-[var(--card-sd-2)] px-8 py-3"
+    >
+      <button id="hamburgerBtn" class="text-[var(--bg-8)]">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </button>
+    </div>
+
+    <!-- Sidebar -->
+    <aside
+      id="sideBar"
+      class="fixed top-0 left-0 h-full z-50 overflow-hidden flex flex-col"
+    >
+      <button id="sideBarBtn" class="sidebar-toggle">
+        <i class="fa-solid fa-angles-right"></i>
+      </button>
+
+      <div class="sidebar-logo">
+        <img src="../img/common/logo-transparent.png" />
+        <h1
+          class="text-lg font-bold tracking-wider opacity-0 -translate-x-2 transition-[var(--sb-fade)]"
+        >
+          STRINGO
+        </h1>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="sidebar-group">
+          <a class="sidebar-item" href="../index.html" data-label="Home">
+            <i class="fa-solid fa-house"></i>
+            <p class="font-semibold">Home</p>
+          </a>
+        </div>
+        <div class="sidebar-group">
+          <a class="sidebar-item" href="./basic.html" data-label="Basic">
+            <i class="fa-solid fa-book"></i>
+            <p class="font-semibold">Basic</p>
+          </a>
+          <a class="sidebar-item" href="./chord.html" data-label="Chord">
+            <i class="fa-solid fa-music"></i>
+            <p class="font-semibold">Chord</p>
+          </a>
+          <a class="sidebar-item" href="./scale.html" data-label="Scale">
+            <i class="fa-solid fa-wave-square"></i>
+            <p class="font-semibold">Scale</p>
+          </a>
+        </div>
+        <div class="sidebar-group">
+          <a class="sidebar-item" href="./model.html" data-label="Model">
+            <i class="fa-solid fa-guitar"></i>
+            <p class="font-semibold">Model</p>
+          </a>
+        </div>
+        <div class="sidebar-group">
+          <a class="sidebar-item" href="./practice.html" data-label="Beginner">
+            <i class="fa-solid fa-dumbbell"></i>
+            <p class="font-semibold">Practice</p>
+          </a>
+        </div>
+      </nav>
+    </aside>
+
+    <div id="pageContent">
+      <section
+        class="flex flex-col justify-center items-center h-150 md:h-190 bg-[linear-gradient(var(--overlay-1),var(--overlay-3)),url('../img/practice/eGuitarBunch.jpeg')] bg-center bg-cover shadow-[var(--card-sd-3)] p-4"
+      >
+        <h1
+          class="text-6xl font-bold tracking-wide text-[var(--bg-1)] text-shadow-lg"
+        >
+          Practice
+        </h1>
+
+        <p
+          class="text-xs sm:text-sm lg:text-base text-center font-semibold tracking-[2px] text-[var(--bg-1)] text-shadow-lg my-4"
+        >
+          “Build skills. Play songs.”
+        </p>
+      </section>
+
+      <section
+        class="flex flex-col items-center bg-[var(--bg-1)] shadow-[var(--card-sd-3)] px-6 py-14"
+      >
+        <h1
+<<<<<<< HEAD
+          class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-wide text-[var(--bg-8)] text-shadow-lg border-b-3 border-[var(--color-beginner)] rounded-lg px-4 py-2"
+          id="beginner"
+=======
+          class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-wide text-[var(--bg-8)] text-shadow-lg"
+>>>>>>> old-origin
+        >
+          Beginner
+        </h1>
+
+        <p
+          class="text-xs sm:text-sm lg:text-base text-center font-semibold tracking-normal text-[var(--bg-8)] text-shadow-lg my-2 md:my-4 mb-4"
+        >
+          “First chords, first songs.”
+        </p>
+
+        <p
+<<<<<<< HEAD
+          class="md:min-w-150 text-xs/6 sm:text-sm/6 lg:text-base/6 font-semibold tracking-normal text-[var(--bg-2)] bg-[image:var(--grad-card-2)] border-l-3 md:border-l-4 border-[var(--color-beginner)] rounded-xl p-4 my-2 mb-4"
+=======
+          class="md:min-w-150 text-xs/6 sm:text-sm/6 lg:text-base/6 font-semibold tracking-normal text-[var(--bg-2)] bg-[image:var(--grad-card-2)] rounded-xl p-4 my-2 mb-4"
+>>>>>>> old-origin
+        >
+          * Start practicing with simple and easy exercises to get comfortable
+          with the guitar. <br />
+          * Focus on building confidence and understanding the basics step by
+          step.
+        </p>
+
+        <h1
+          class="text-xl md:text-2xl font-bold tracking-wide text-[var(--bg-8)] text-shadow-lg border-b-2 border-[var(--bg-7)] px-4"
+        >
+          Music Scores
+        </h1>
+
+        <div
+          class="flex items-center justify-end gap-1.5 w-full mb-3 text-[var(--bg-7)] text-[10px] tracking-[1.5px] uppercase px-2 md:px-20 lg:px-30 xl:px-40 mt-4 mb-2"
+        >
+          <i class="fa-solid fa-arrow-right text-[10px]"></i> swipe
+        </div>
+
+<<<<<<< HEAD
+        <div class="scroll-track w-full">
+          <div class="practice-card beginner">
+=======
+        <div class="scroll-track w-full" id="practiceTrack">
+          <div class="practice-card">
+>>>>>>> old-origin
+            <div class="img-zone">
+              <img src="../img/practice/practices/lvl1.png" alt="Level 1" />
+            </div>
+            <span class="badge">Beginner</span>
+            <div class="body">
+              <div class="left">
+                <span class="title">Lvl</span>
+                <span class="num">01</span>
+              </div>
+              <span class="view"
+                >View <i class="fa-solid fa-arrow-right"></i
+              ></span>
+            </div>
+          </div>
+
+<<<<<<< HEAD
+          <div class="practice-card beginner">
+=======
+          <div class="practice-card">
+>>>>>>> old-origin
+            <div class="img-zone">
+              <img src="../img/practice/practices/lvl2.png" alt="Level 2" />
+            </div>
+            <span class="badge">Beginner</span>
+            <div class="body">
+              <div class="left">
+                <span class="title">Lvl</span>
+                <span class="num">02</span>
+              </div>
+              <span class="view"
+                >View <i class="fa-solid fa-arrow-right"></i
+              ></span>
+            </div>
+          </div>
+
+<<<<<<< HEAD
+          <div class="practice-card beginner">
+=======
+          <div class="practice-card">
+>>>>>>> old-origin
+            <div class="img-zone">
+              <img src="../img/practice/practices/lvl3.png" alt="Level 3" />
+            </div>
+            <span class="badge">Beginner</span>
+            <div class="body">
+              <div class="left">
+                <span class="title">Lvl</span>
+                <span class="num">03</span>
+              </div>
+              <span class="view"
+                >View <i class="fa-solid fa-arrow-right"></i
+              ></span>
+            </div>
+          </div>
+
+<<<<<<< HEAD
+          <div class="practice-card beginner">
+=======
+          <div class="practice-card">
+>>>>>>> old-origin
+            <div class="img-zone">
+              <img src="../img/practice/practices/lvl4.png" alt="Level 4" />
+            </div>
+            <span class="badge">Beginner</span>
+            <div class="body">
+              <div class="left">
+                <span class="title">Lvl</span>
+                <span class="num">04</span>
+              </div>
+              <span class="view"
+                >View <i class="fa-solid fa-arrow-right"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center gap-1.5 mt-4" id="practiceDots">
+          <div class="practice-dot active"></div>
+          <div class="practice-dot"></div>
+          <div class="practice-dot"></div>
+          <div class="practice-dot"></div>
+        </div>
+      </section>
+
+      <section
+        class="flex flex-col items-center bg-[linear-gradient(var(--overlay-2),var(--overlay-3)),url('../img/model/blackGuitar.jpeg')] bg-right md:bg-center bg-cover shadow-[var(--card-sd-3)] px-6 py-14"
+<<<<<<< HEAD
+        id="intermediate"
+      >
+        <h1
+          class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-wide text-[var(--bg-1)] text-shadow-lg border-b-3 border-[var(--accent-light)] rounded-lg px-4 py-2"
+=======
+      >
+        <h1
+          class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-wide text-[var(--bg-1)] text-shadow-lg"
+>>>>>>> old-origin
+        >
+          Intermediate
+        </h1>
+
+        <p
+          class="text-xs sm:text-sm lg:text-base text-center font-semibold tracking-normal text-[var(--bg-1)] text-shadow-lg my-2 md:my-4 mb-4"
+        >
+          “Level up your guitar game.”
+        </p>
+
+        <p
+<<<<<<< HEAD
+          class="md:min-w-150 text-xs/6 sm:text-sm/6 lg:text-base/6 font-semibold tracking-normal text-[var(--bg-1)] bg-[image:var(--white-subtle)] shadow-[var(--card-sd-1)] border-1 border-[var(--white-mid)] border-l-3 md:border-l-4 border-l-[var(--accent-light)] rounded-xl p-4 my-2 mb-4"
+=======
+          class="md:min-w-150 text-xs/6 sm:text-sm/6 lg:text-base/6 font-semibold tracking-normal text-[var(--bg-1)] bg-[image:var(--white-subtle)] shadow-[var(--card-sd-1)] border-1 border-[var(--white-mid)] rounded-xl p-4 my-2 mb-4"
+>>>>>>> old-origin
+        >
+          * Practice more challenging patterns and techniques to improve control
+          and consistency. <br>
+          * This level helps you become more confident in playing
+          different songs.
+        </p>
+
+        <h1
+          class="text-xl md:text-2xl font-bold tracking-wide text-[var(--bg-1)] text-shadow-lg border-b-2 border-[var(--bg-2)] px-4 mt-4"
+        >
+          Music Scores
+        </h1>
+
+        <div
+          class="flex items-center justify-end gap-1.5 w-full mb-3 text-[var(--bg-7)] text-[10px] tracking-[1.5px] uppercase px-2 md:px-20 lg:px-30 xl:px-40 mt-4 mb-2"
+        >
+          <i class="fa-solid fa-arrow-right text-[10px]"></i> swipe
+        </div>
+
+<<<<<<< HEAD
+        <div class="scroll-track w-full">
+=======
+        <div class="scroll-track w-full" id="practiceTrack">
+>>>>>>> old-origin
+          <div class="practice-card intermediate">
+            <div class="img-zone">
+              <img
+                src="../img/practice/practices/lvl5 (pt1).png"
+                alt="Level 5a"
+              />
+            </div>
+            <span class="badge">Intermediate</span>
+            <div class="body">
+              <div class="left">
+                <span class="title">Lvl</span>
+                <span class="num">05a</span>
+              </div>
+              <span class="view">
+                View <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="practice-card intermediate">
+            <div class="img-zone">
+              <img
+                src="../img/practice/practices/lvl5 (pt2).png"
+                alt="Level 5b"
+              />
+            </div>
+            <span class="badge">Intermediate</span>
+            <div class="body">
+              <div class="left">
+                <span class="title">Lvl</span>
+                <span class="num">05b</span>
+              </div>
+              <span class="view">
+                View <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="practice-card intermediate">
+            <div class="img-zone">
+              <img
+                src="../img/practice/practices/lvl6 (pt1).png"
+                alt="Level 6a"
+              />
+            </div>
+            <span class="badge">Intermediate</span>
+            <div class="body">
+              <div class="left">
+                <span class="title">Lvl</span>
+                <span class="num">06a</span>
+              </div>
+              <span class="view">
+                View <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="practice-card intermediate">
+            <div class="img-zone">
+              <img
+                src="../img/practice/practices/lvl6 (pt2).png"
+                alt="Level 6b"
+              />
+            </div>
+            <span class="badge">Intermediate</span>
+            <div class="body">
+              <div class="left">
+                <span class="title">Lvl</span>
+                <span class="num">06b</span>
+              </div>
+              <span class="view">
+                View <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center gap-1.5 mt-4" id="practiceDots">
+          <div class="practice-dot active"></div>
+          <div class="practice-dot"></div>
+          <div class="practice-dot"></div>
+          <div class="practice-dot"></div>
+        </div>
+      </section>
+
+      <section
+        class="flex flex-col items-center bg-[var(--bg-1)] shadow-[var(--card-sd-3)] px-6 py-14"
+<<<<<<< HEAD
+        id="advanced"
+      >
+        <h1
+          class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-wide text-[var(--bg-8)] text-shadow-lg border-b-3 border-[var(--color-advanced)] rounded-lg px-4 py-2"
+=======
+      >
+        <h1
+          class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-wide text-[var(--bg-8)] text-shadow-lg"
+>>>>>>> old-origin
+        >
+          Advanced
+        </h1>
+
+        <p
+          class="text-xs sm:text-sm lg:text-base text-center font-semibold tracking-normal text-[var(--bg-8)] text-shadow-lg my-2 md:my-4 mb-4"
+        >
+          “Push limits. Play with power.”
+        </p>
+
+        <p
+<<<<<<< HEAD
+          class="md:min-w-150 text-xs/6 sm:text-sm/6 lg:text-base/6 font-semibold tracking-normal text-[var(--bg-2)] bg-[image:var(--grad-card-2)] border-l-3 md:border-l-4 border-[var(--color-advanced)] rounded-xl p-4 my-2 mb-4"
+=======
+          class="md:min-w-150 text-xs/6 sm:text-sm/6 lg:text-base/6 font-semibold tracking-normal text-[var(--bg-2)] bg-[image:var(--grad-card-2)] rounded-xl p-4 my-2 mb-4"
+>>>>>>> old-origin
+        >
+          * Take on complex practices that develop speed, precision, and musical
+          expression. <br>
+          * Push your limits and refine your overall playing ability.
+        </p>
+
+        <h1
+          class="text-xl md:text-2xl font-bold tracking-wide text-[var(--bg-8)] text-shadow-lg border-b-2 border-[var(--bg-7)] px-4"
+        >
+          Music Scores
+        </h1>
+
+        <div
+          class="flex items-center justify-end gap-1.5 w-full mb-3 text-[var(--bg-7)] text-[10px] tracking-[1.5px] uppercase px-2 md:px-20 lg:px-30 xl:px-40 mt-4 mb-2"
+        >
+          <i class="fa-solid fa-arrow-right text-[10px]"></i> swipe
+        </div>
+
+<<<<<<< HEAD
+        <div class="scroll-track w-full">
+          <div class="practice-card advanced">
+=======
+        <div class="scroll-track w-full" id="practiceTrack">
+          <div class="practice-card">
+>>>>>>> old-origin
+            <div class="img-zone">
+              <img src="../img/practice/practices/lvl7.png" alt="Level 7" />
+            </div>
+            <span class="badge">Advanced</span>
+            <div class="body">
+              <div class="left">
+                <span class="title">Lvl</span>
+                <span class="num">07</span>
+              </div>
+              <span class="view">
+                View <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </div>
+          </div>
+
+<<<<<<< HEAD
+          <div class="practice-card advanced">
+=======
+          <div class="practice-card">
+>>>>>>> old-origin
+            <div class="img-zone">
+              <img src="../img/practice/practices/lvl8.png" alt="Level 8" />
+            </div>
+            <span class="badge">Advanced</span>
+            <div class="body">
+              <div class="left">
+                <span class="title">Lvl</span>
+                <span class="num">08</span>
+              </div>
+              <span class="view"
+                >View <i class="fa-solid fa-arrow-right"></i
+              ></span>
+            </div>
+          </div>
+
+<<<<<<< HEAD
+          <div class="practice-card advanced">
+=======
+          <div class="practice-card">
+>>>>>>> old-origin
+            <div class="img-zone">
+              <img src="../img/practice/practices/lvl9.png" alt="Level 9" />
+            </div>
+            <span class="badge">Advanced</span>
+            <div class="body">
+              <div class="left">
+                <span class="title">Lvl</span>
+                <span class="num">09</span>
+              </div>
+              <span class="view"
+                >View <i class="fa-solid fa-arrow-right"></i
+              ></span>
+            </div>
+          </div>
+
+<<<<<<< HEAD
+          <div class="practice-card advanced">
+=======
+          <div class="practice-card">
+>>>>>>> old-origin
+            <div class="img-zone">
+              <img src="../img/practice/practices/lvl10.png" alt="Level 10" />
+            </div>
+            <span class="badge">Advanced</span>
+            <div class="body">
+              <div class="left">
+                <span class="title">Lvl</span>
+                <span class="num">10</span>
+              </div>
+              <span class="view"
+                >View <i class="fa-solid fa-arrow-right"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center gap-1.5 mt-4" id="practiceDots">
+          <div class="practice-dot active"></div>
+          <div class="practice-dot"></div>
+          <div class="practice-dot"></div>
+          <div class="practice-dot"></div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer
+        class="flex justify-center items-center w-full bg-[image:var(--grad-card-1)] shadow-[var(--card-sd-3)] p-4"
+      >
+        <h1>Created by Group 3 • © 2026 Stringo. All rights reserved.</h1>
+      </footer>
+    </div>
+
+    <script src="../js/sidebar.js"></script>
+    <script src="../js/practice.js"></script>
+  </body>
+</html>

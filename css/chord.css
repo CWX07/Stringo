@@ -1,0 +1,111 @@
+.chord-group {
+  position: relative;
+  width: 250px;
+
+  overflow: hidden;
+  border-radius: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  background: var(--bg-1);
+  display: flex;
+  flex-direction: column;
+  border: var(--card-bd-1) var(--bg-5);
+  box-shadow: var(--card-sd-1);
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.chord-group:hover {
+  transform: translateY(-4px);
+}
+
+.chord-group img {
+  width: 100%;
+  display: block;
+  flex: 1;
+  object-fit: cover;
+  opacity: 0.95;
+  transition:
+    opacity 0.3s ease,
+    transform 0.5s ease;
+}
+
+.chord-group:hover img {
+  transform: scale(1.02) translateY(-2px);
+}
+
+.chord-group span {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  font-family: "Playfair Display", serif;
+  font-size: 56px;
+  font-weight: 900;
+  color: var(--accent-light);
+  opacity: 0.15;
+  line-height: 1;
+  z-index: 2;
+  border-radius: 0;
+  padding: 0;
+  letter-spacing: -1px;
+}
+
+.chord-group div {
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.chord-group div h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--bg-8);
+  letter-spacing: 0.5px;
+  margin-bottom: 0;
+  transition: transform 0.3s ease;
+}
+
+.chord-group:hover div h2 {
+  transform: scale(1.04) translate(1px, -1px);
+}
+
+.chord-group div p {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+
+.chord-group div p span {
+  position: relative;
+  inset: 0;
+  padding: 3px 8px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(200, 134, 10, 0.2);
+  border: var(--card-bd-1) var(--accent-halfOp);
+  color: var(--bg-8);
+  font-size: 12px;
+  font-weight: 800;
+  opacity: 0.8;
+  transition: all 0.3s ease-in-out;
+}
+
+.chord-group:hover div p span {
+  background: var(--accent-softer);
+  box-shadow: (--card-sd-4);
+  opacity: 1;
+}
+
+@media screen and (min-width: 1250px) {
+    .chord-group {
+        width: 300px;
+    }
+}

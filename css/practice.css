@@ -1,0 +1,214 @@
+.scroll-track {
+  width: 90%;
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  background: transparent;
+  padding: 15px 4px;
+  scrollbar-width: none;
+}
+
+.scroll-track::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .scroll-track {
+    width: 75%;
+    padding: 15px;
+  }
+}
+
+.practice-card {
+  scroll-snap-align: center;
+  flex-shrink: 0;
+  width: calc(100% - 24px);
+  border: var(--card-bd-1) rgba(200, 134, 10, 0.25);
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  box-shadow: var(--card-sd-1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.practice-card.beginner,
+.practice-card.advanced {
+  background: var(--grad-card-1);
+}
+
+.practice-card.intermediate {
+  background: var(--white-soft);
+}
+
+.practice-card:hover {
+  transform: translateY(-3px);
+}
+
+/* Cropped image zone */
+.practice-card .img-zone {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+
+.practice-card .img-zone img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left center;
+  opacity: 0.85;
+  transition: transform 0.4s ease;
+}
+
+.practice-card:hover .img-zone img {
+  transform: scale(1.04);
+}
+
+/* Right-side fade over image */
+.practice-card .img-zone::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, transparent 50%, var(--accent-darker));
+}
+
+/* Beginner badge */
+.practice-card .badge {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 20px;
+  z-index: 2;
+}
+
+.practice-card.beginner .badge {
+  background: rgba(107, 186, 117, 0.15);
+  border: var(--card-bd-1) var(--color-beginner);
+  color: var(--color-beginner);
+}
+
+.practice-card.intermediate .badge {
+  background: rgba(200, 134, 10, 0.2);
+  border: var(--card-bd-1) rgba(200, 134, 10, 0.4);
+  color: var(--accent-light);
+}
+
+.practice-card.advanced .badge {
+  background: rgba(224, 92, 92, 0.15);
+  border: var(--card-bd-1) var(--color-advanced);
+  color: var(--color-advanced);
+}
+
+/* Bottom info row */
+.practice-card .body {
+  padding: 8px 18px 18px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.practice-card .body .left {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.practice-card .body .num {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.practice-card .body .title {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.practice-card .body .view {
+  height: 100%;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.practice-card.beginner .body .num,
+.practice-card.beginner .body .title,
+.practice-card.beginner .body .view {
+  color: var(--color-beginner);
+  opacity: 1;
+}
+
+.practice-card.intermediate .body .num,
+.practice-card.intermediate .body .title,
+.practice-card.intermediate .body .view {
+  color: var(--accent);
+  opacity: 0.8;
+}
+
+.practice-card.advanced .body .num,
+.practice-card.advanced .body .title,
+.practice-card.advanced .body .view {
+  color: var(--color-advanced);
+  opacity: 0.8;
+}
+
+
+@media screen and (min-width: 768px) {
+  .practice-card .body .view {
+    font-size: 13px;
+  }
+}
+
+.practice-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  transition:
+    width 0.25s ease,
+    background 0.25s ease;
+}
+
+.practice-dot.active {
+  background: var(--accent);
+  width: 18px;
+  border-radius: 3px;
+}
+
+@media screen and (min-width: 768px) {
+  .practice-card {
+    width: calc(100% - 30px);
+  }
+  .practice-card .img-zone {
+    height: 130px;
+  }
+  .practice-card .body .title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .practice-card .img-zone {
+    height: 160px;
+  }
+  .practice-card .body .title {
+    font-size: 22px;
+  }
+}

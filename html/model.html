@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/sidebar.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/model.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="icon" href="../img/common/logo-white.jpg" type="image/png" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Stringo</title>
+  </head>
+
+  <body class="flex flex-col min-h-screen">
+    <!-- Top nav (mobile) -->
+    <div
+      id="topNav"
+      class="fixed flex justify-center items-center w-full h-12 bg-[image:var(--grad-card-3)] shadow-[var(--card-sd-2)] px-8 py-3"
+    >
+      <button id="hamburgerBtn" class="text-[var(--bg-8)]">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </button>
+    </div>
+
+    <!-- Sidebar -->
+    <aside
+      id="sideBar"
+      class="fixed top-0 left-0 h-full z-50 overflow-hidden flex flex-col"
+    >
+      <button id="sideBarBtn" class="sidebar-toggle">
+        <i class="fa-solid fa-angles-right"></i>
+      </button>
+
+      <div class="sidebar-logo">
+        <img src="../img/common/logo-transparent.png" />
+        <h1
+          class="text-lg font-bold tracking-wider opacity-0 -translate-x-2 transition-[var(--sb-fade)]"
+        >
+          STRINGO
+        </h1>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="sidebar-group">
+          <a class="sidebar-item" href="../index.html" data-label="Home">
+            <i class="fa-solid fa-house"></i>
+            <p class="font-semibold">Home</p>
+          </a>
+        </div>
+        <div class="sidebar-group">
+          <a class="sidebar-item" href="./basic.html" data-label="Basic">
+            <i class="fa-solid fa-book"></i>
+            <p class="font-semibold">Basic</p>
+          </a>
+          <a class="sidebar-item" href="./chord.html" data-label="Chord">
+            <i class="fa-solid fa-music"></i>
+            <p class="font-semibold">Chord</p>
+          </a>
+          <a class="sidebar-item" href="./scale.html" data-label="Scale">
+            <i class="fa-solid fa-wave-square"></i>
+            <p class="font-semibold">Scale</p>
+          </a>
+        </div>
+        <div class="sidebar-group">
+          <a class="sidebar-item" href="./model.html" data-label="Model">
+            <i class="fa-solid fa-guitar"></i>
+            <p class="font-semibold">Model</p>
+          </a>
+        </div>
+        <div class="sidebar-group">
+          <a class="sidebar-item" href="./practice.html" data-label="Beginner">
+            <i class="fa-solid fa-dumbbell"></i>
+            <p class="font-semibold">Practice</p>
+          </a>
+        </div>
+      </nav>
+    </aside>
+
+    <div id="pageContent">
+      <section
+        class="flex flex-col justify-center items-center h-150 md:h-190 bg-[linear-gradient(var(--overlay-2),var(--overlay-3)),url('../img/model/redGuitar.jpeg')] bg-center bg-cover shadow-[var(--card-sd-3)] p-4"
+      >
+        <h1
+          class="text-6xl font-bold tracking-wide text-[var(--bg-1)] text-shadow-lg"
+        >
+          Model
+        </h1>
+
+        <p
+          class="text-xs sm:text-sm lg:text-base text-center font-semibold tracking-[2px] text-[var(--bg-1)] text-shadow-lg my-4"
+        >
+          "Different guitar. Different voices."
+        </p>
+      </section>
+
+      <section
+        class="flex flex-col items-center bg-[var(--bg-1)] shadow-[var(--card-sd-3)] px-6 py-14"
+<<<<<<< HEAD
+        id="stratocaster"
+=======
+>>>>>>> old-origin
+      >
+        <h1
+          class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-wide text-[var(--bg-8)] text-shadow-lg"
+        >
+          Stratocaster
+        </h1>
+
+        <p
+          class="text-xs sm:text-sm lg:text-base text-center font-semibold tracking-normal text-[var(--bg-8)] text-shadow-lg my-2 md:my-4 mb-4"
+        >
+          “Smooth tone, endless styles.”
+        </p>
+
+        <p
+          class="md:min-w-150 text-xs/7 sm:text-sm/7 lg:text-base/7 font-semibold tracking-normal text-[var(--bg-2)] bg-[image:var(--grad-card-2)] rounded-xl p-4 my-2 mb-4"
+        >
+          * Known for its bright and clear tone. <br />
+          * Extremely versatile for many music genres. <br />
+          * Popular for lead guitar and expressive playing.
+        </p>
+
+        <h1
+          class="text-xl md:text-2xl font-bold tracking-wide text-[var(--bg-8)] text-shadow-lg border-b-2 border-[var(--bg-7)] px-4"
+        >
+          Iconic Brands
+        </h1>
+
+        <div
+          class="flex md:grid md:grid-cols-2 lg:grid-cols-4 md:place-items-center flex-col justify-center items-center w-full h-full gap-6 lg:px-4 my-4 md:mt-8"
+        >
+          <div class="guitar-split-item brand-1 stratocaster">
+            <img src="../img/model/stratocasterFender.jpeg" alt="" />
+            <div>
+              <h2>Fender</h2>
+              <p>“The original Strat sound.”</p>
+            </div>
+          </div>
+
+          <div class="guitar-split-item brand-1 stratocaster">
+            <img src="../img/model/stratocasterSquier.jpeg" alt="" />
+            <div>
+              <h2>Squier</h2>
+              <p>“Classic Strat feel, beginner friendly.”</p>
+            </div>
+          </div>
+
+          <div class="guitar-split-item brand-1 stratocaster">
+            <img src="../img/model/stratocasterG&L.jpeg" alt="" />
+            <div>
+              <h2>G&L</h2>
+              <p>“Modern innovation with vintage soul.”</p>
+            </div>
+          </div>
+
+          <div class="guitar-split-item brand-1 stratocaster">
+            <img src="../img/model/stratocasterPRS.png" alt="" />
+            <div>
+              <h2>PRS</h2>
+              <p>“Precision tone with premium craftsmanship.”</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="flex flex-col items-center bg-[linear-gradient(var(--overlay-2),var(--overlay-3)),url('../img/model/blackGuitar.jpeg')] bg-right md:bg-center bg-cover shadow-[var(--card-sd-3)] px-6 py-14"
+<<<<<<< HEAD
+        id="telecaster"
+=======
+>>>>>>> old-origin
+      >
+        <h1
+          class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-wide text-[var(--bg-1)] text-shadow-lg"
+        >
+          Telecaster
+        </h1>
+
+        <p
+          class="text-xs sm:text-sm lg:text-base text-center font-semibold tracking-normal text-[var(--bg-1)] text-shadow-lg my-2 md:my-4 mb-4"
+        >
+          “Sharp tone. Pure character.”
+        </p>
+
+        <p
+          class="md:min-w-150 text-xs/7 sm:text-sm/7 lg:text-base/7 font-semibold tracking-normal text-[var(--bg-1)] bg-[image:var(--white-subtle)] shadow-[var(--card-sd-1)] border-1 border-[var(--white-mid)] rounded-xl p-4 my-2 mb-4"
+        >
+          * A straightforward electric guitar with a sharp attack and clear note
+          definition. <br />
+          * Famous for its punchy tone that cuts through mixes in country, rock,
+          and indie music. <br />
+          * Durable design with powerful rhythm presence and strong character.
+        </p>
+
+        <h1
+          class="text-xl md:text-2xl font-bold tracking-wide text-[var(--bg-1)] text-shadow-lg border-b-2 border-[var(--bg-2)] px-4 mt-4"
+        >
+          Iconic Brands
+        </h1>
+
+        <div
+          class="flex md:grid md:grid-cols-3 md:place-items-center flex-col justify-center items-center w-full h-full gap-6 md:gap-8 lg:px-8 my-4 md:mt-8 lg:mt-10"
+        >
+          <div class="guitar-split-item brand-2 telecaster">
+<<<<<<< HEAD
+            <img src="../img/model/Telecaster Fender.webp" alt="" />
+=======
+            <img src="../img/model/stratocasterFender.jpeg" alt="" />
+>>>>>>> old-origin
+            <div>
+              <h2>Fender</h2>
+              <p>“Pure twang. Timeless design.”</p>
+            </div>
+          </div>
+
+          <div class="guitar-split-item brand-2 telecaster">
+<<<<<<< HEAD
+            <img src="../img/model/Telecaster Squier.webp" alt="" />
+=======
+            <img src="../img/model/stratocasterSquier.jpeg" alt="" />
+>>>>>>> old-origin
+            <div>
+              <h2>Squier</h2>
+              <p>“Affordable Tele spirit.”</p>
+            </div>
+          </div>
+
+          <div class="guitar-split-item brand-2 telecaster">
+<<<<<<< HEAD
+            <img src="../img/model/Telecaster Epilson.webp" alt="" />
+=======
+            <img src="../img/model/stratocasterG&L.jpeg" alt="" />
+>>>>>>> old-origin
+            <div>
+              <h2>Epilson</h2>
+              <p>“Warm tone with classic character.”</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="flex flex-col items-center bg-[var(--bg-1)] shadow-[var(--card-sd-3)] px-6 py-14"
+<<<<<<< HEAD
+        id="soloist"
+=======
+>>>>>>> old-origin
+      >
+        <h1
+          class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-wide text-[var(--bg-8)] text-shadow-lg"
+        >
+          Soloist
+        </h1>
+
+        <p
+          class="text-xs sm:text-sm lg:text-base text-center font-semibold tracking-normal text-[var(--bg-8)] text-shadow-lg my-2 md:my-4 mb-4"
+        >
+          "Precision for performance.”
+        </p>
+
+        <p
+          class="md:min-w-150 text-xs/7 sm:text-sm/7 lg:text-base/7 font-semibold tracking-normal text-[var(--bg-2)] bg-[image:var(--grad-card-2)] rounded-xl p-4 my-2 mb-4"
+        >
+          * Designed for fast solos, technical playing, and modern high-gain
+          tones. <br />
+          * Features slim necks and powerful pickups for effortless shredding.
+          <br />
+          * Ideal for players who focus on speed, precision, and advanced
+          techniques.
+        </p>
+
+        <h1
+          class="text-xl md:text-2xl font-bold tracking-wide text-[var(--bg-8)] text-shadow-lg border-b-2 border-[var(--bg-7)] px-4"
+        >
+          Iconic Brands
+        </h1>
+
+        <div
+          class="flex md:grid md:grid-cols-2 lg:grid-cols-4 md:place-items-center flex-col justify-center items-center w-full h-full gap-6 lg:px-4 my-4 md:mt-8"
+        >
+          <div class="guitar-split-item brand-1">
+<<<<<<< HEAD
+            <img src="../img/model/Soloist Ibanez .webp" alt="" />
+=======
+            <img src="../img/model/stratocasterFender.jpeg" alt="" />
+>>>>>>> old-origin
+            <div>
+              <h2>Ibanez</h2>
+              <p>“Built for speed and shredding.”</p>
+            </div>
+          </div>
+
+          <div class="guitar-split-item brand-1">
+<<<<<<< HEAD
+            <img src="../img/model/Soloist PRS.webp" alt="" />
+=======
+            <img src="../img/model/stratocasterSquier.jpeg" alt="" />
+>>>>>>> old-origin
+            <div>
+              <h2>PRS</h2>
+              <p>“Performance meets elegance.”</p>
+            </div>
+          </div>
+
+          <div class="guitar-split-item brand-1">
+<<<<<<< HEAD
+            <img src="../img/model/Soloist Jackson.webp" alt="" />
+=======
+            <img src="../img/model/stratocasterG&L.jpeg" alt="" />
+>>>>>>> old-origin
+            <div>
+              <h2>Jackson</h2>
+              <p>“Aggressive tone for modern players.”</p>
+            </div>
+          </div>
+
+          <div class="guitar-split-item brand-1">
+<<<<<<< HEAD
+            <img src="../img/model/Soloist ESP.jpg" alt="" />
+=======
+            <img src="../img/model/stratocasterPRS.png" alt="" />
+>>>>>>> old-origin
+            <div>
+              <h2>ESP</h2>
+              <p>“Power and precision for heavy music.”</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="flex flex-col items-center bg-[linear-gradient(var(--overlay-2),var(--overlay-3)),url('../img/model/bluePurplish.jpg')] bg-right md:bg-center bg-cover shadow-[var(--card-sd-3)] px-6 py-14"
+<<<<<<< HEAD
+        id="flyingV"
+=======
+>>>>>>> old-origin
+      >
+        <h1
+          class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-wide text-[var(--bg-1)] text-shadow-lg"
+        >
+          Flying V
+        </h1>
+
+        <p
+          class="text-xs sm:text-sm lg:text-base text-center font-semibold tracking-normal text-[var(--bg-1)] text-shadow-lg my-2 md:my-4 mb-4"
+        >
+          “Stand out. Play loud.”
+        </p>
+
+        <p
+          class="md:min-w-150 text-xs/7 sm:text-sm/7 lg:text-base/7 font-semibold tracking-normal text-[var(--bg-1)] bg-[var(--white-faint)] shadow-[var(--card-sd-1)] border-1 border-[var(--white-mid)] rounded-xl p-4 my-2 mb-4"
+        >
+          * A striking guitar shape built for stage presence and heavy sound
+          projection. <br />
+          * Known for strong sustain and aggressive tones in hard rock and
+          metal. <br />
+          * Combines bold aesthetics with powerful sonic impact.
+        </p>
+
+        <h1
+          class="text-xl md:text-2xl font-bold tracking-wide text-[var(--bg-1)] text-shadow-lg border-b-2 border-[var(--bg-2)] px-4 mt-4"
+        >
+          Iconic Brands
+        </h1>
+
+        <div
+          class="flex md:grid md:grid-cols-2 lg:grid-cols-4 md:place-items-center flex-col justify-center items-center w-full h-full gap-6 lg:px-4 my-4 md:mt-8 lg:mt-10"
+        >
+          <div class="guitar-split-item brand-2">
+<<<<<<< HEAD
+            <img src="../img/model/Flying V Jackson.webp" alt="" />
+=======
+            <img src="../img/model/stratocasterFender.jpeg" alt="" />
+>>>>>>> old-origin
+            <div>
+              <h2>Jackson</h2>
+              <p>“Sharp design, sharper tone.”</p>
+            </div>
+          </div>
+
+          <div class="guitar-split-item brand-2">
+<<<<<<< HEAD
+            <img src="../img/model/Flying V ESP.webp" alt="" />
+=======
+            <img src="../img/model/stratocasterSquier.jpeg" alt="" />
+>>>>>>> old-origin
+            <div>
+              <h2>ESP</h2>
+              <p>“Metal attitude in every note.”</p>
+            </div>
+          </div>
+
+          <div class="guitar-split-item brand-2">
+<<<<<<< HEAD
+            <img src="../img/model/Flying V Epiphone.jpg" alt="" />
+=======
+            <img src="../img/model/stratocasterG&L.jpeg" alt="" />
+>>>>>>> old-origin
+            <div>
+              <h2>Epiphone</h2>
+              <p>“Classic V style made accessible.”</p>
+            </div>
+          </div>
+          <div class="guitar-split-item brand-2">
+<<<<<<< HEAD
+            <img src="../img/model/Flying V Gibson.jpg" alt="" />
+=======
+            <img src="../img/model/stratocasterG&L.jpeg" alt="" />
+>>>>>>> old-origin
+            <div>
+              <h2>Gibson</h2>
+              <p>“Legendary rock heritage.”</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer
+        class="flex justify-center items-center w-full bg-[image:var(--grad-card-1)] shadow-[var(--card-sd-3)] p-4"
+      >
+        <h1>Created by Group 3 • © 2026 Stringo. All rights reserved.</h1>
+      </footer>
+    </div>
+
+    <script src="../js/sidebar.js"></script>
+  </body>
+</html>

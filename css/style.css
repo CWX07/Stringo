@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Nunito:wght@400;500;600&display=swap");
+
+/* VARIABLES */
+:root {
+  /* Greyscale palette — light (1) to dark (9) */
+  --bg-1: rgb(235, 230, 225);
+  --bg-2: rgba(225, 225, 225, 0.9);
+  --bg-3: rgba(200, 200, 200, 0.9);
+  --bg-4: rgba(170, 170, 170, 0.9);
+  --bg-5: rgba(120, 120, 120, 0.9);
+  --bg-6: rgba(90, 90, 90, 0.9);
+  --bg-7: rgba(60, 60, 60, 0.9);
+  --bg-8: rgba(30, 30, 30, 0.9);
+  --bg-9: rgba(0, 0, 0, 0.9);
+
+  /* Black overlays — used for image tinting */
+  --overlay-1: rgba(0, 0, 0, 0.2);
+  --overlay-2: rgba(0, 0, 0, 0.55);
+  --overlay-3: rgba(0, 0, 0, 0.8);
+
+  /* White overlays — used in home.css for card/row hover surfaces */
+  --white-faint: rgba(255, 255, 255, 0.06);
+  --white-subtle: rgba(255, 255, 255, 0.1);
+  --white-soft: rgba(255, 255, 255, 0.15);
+  --white-light: rgba(255, 255, 255, 0.2);
+  --white-mid: rgba(255, 255, 255, 0.3);
+  --white-dim: rgba(255, 255, 255, 0.6);
+  --white-muted: rgba(255, 255, 255, 0.65);
+  --white-clear: rgba(255, 255, 255, 0.7);
+
+  /* Accent — warm amber, evokes wood, strings, warmth */
+  --accent: rgba(200, 134, 10, 1);
+  --accent-halfOp: rgba(200, 134, 10, 1);
+  --accent-light: rgba(240, 180, 41, 1);
+  --accent-soft: rgba(238, 185, 95, 1);
+  --accent-softer: rgba(255, 215, 150, 1);
+  --accent-dim: rgba(200, 134, 10, 0.15);
+
+  --accent-dark: rgba(42, 32, 16, 1);
+  --accent-darker: rgba(28, 28, 28, 1);
+
+  /* Difficulty level colours */
+  --color-beginner: rgba(107, 186, 117, 1);
+  --color-advanced: rgba(224, 92, 92, 1);
+
+  /* Gradients */
+  --grad-sidebar: linear-gradient(
+    to bottom,
+    var(--bg-1) 0%,
+    var(--bg-2) 50%,
+    var(--accent-darker) 100%
+  );
+
+  --grad-card-1: radial-gradient(
+    circle at top,
+    var(--bg-1) 0%,
+    var(--bg-2) 70%,
+    var(--bg-3) 100%
+  );
+
+  --grad-card-2: linear-gradient(
+    to bottom left,
+    var(--accent-darker) 0%,
+    var(--accent-dark) 100%
+  );
+
+  --grad-card-3: linear-gradient(
+    to right,
+    var(--bg-1) 0%,
+    var(--bg-2) 35%,
+    var(--bg-4) 100%
+  );
+
+  --grad-acc-1: linear-gradient(
+    to right,
+    transparent 0%,
+    var(--accent) 50%,
+    transparent 100%
+  );
+
+  /* Border radius */
+  --bd-s: 10px;
+
+  /* Borders & shadows */
+  --card-bd-1: 1px solid;
+  --card-bd-2: 2px solid;
+  --card-sd-1: 2px 6px 10px var(--bg-5);
+  --card-sd-2: 0 4px 10px var(--bg-4);
+  --card-sd-3: 0 -10px 10px var(--bg-4);
+  --card-sd-4: 0 0 10px var(--bg-5);
+
+  /* Sidebar dimensions & animation */
+  --sb-w-collapsed: 50px;
+  --sb-w-expanded: 200px;
+  --sb-ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --sb-dur: 0.3s;
+  --sb-fade: opacity 0.2s ease 0.06s, transform 0.2s ease 0.06s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+}
+
+section {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+#pageContent {
+  margin-left: 0;
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 48px);
+}
+
+#pageContent > footer {
+  margin-top: auto;
+}
+
+@media screen and (min-width: 426px) {
+  #pageContent {
+    margin-left: var(--sb-w-collapsed);
+    margin-top: 0;
+    min-height: 100vh;
+  }
+}
+
+footer {
+  width: 100%;
+}
+
+footer h1 {
+  font-family: "Nunito", sans-serif;
+  color: var(--bg-9);
+  font-size: 10px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}

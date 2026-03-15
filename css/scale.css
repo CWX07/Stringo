@@ -1,0 +1,92 @@
+.scale-group {
+  position: relative;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--grad-card-2);
+  border: var(--card-bd-1) var(--accent-dim);
+  border-radius: 20px;
+  box-shadow: var(--card-sd-1);
+  overflow: hidden;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.scale-group:hover {
+  transform: translateY(-4px);
+}
+
+.scale-group::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(to top, transparent 0%, var(--overlay-1) 100%);
+  opacity: 0.8;
+  z-index: 1;
+  transition: background 0.3s ease;
+}
+
+.scale-group div {
+  position: relative;
+}
+
+.scale-group img {
+  padding: 24px;
+  transition:
+    opacity 0.3s ease,
+    transform 0.5s ease;
+}
+
+.scale-group:hover img {
+  transform: scale(1.02) translateY(-2px);
+}
+
+.scale-group h1 {
+  position: absolute;
+  bottom: 45px;
+  right: 40px;
+  font-family: "Playfair Display", serif;
+  font-size: 52px;
+  font-weight: 900;
+  color: var(--accent-light);
+  opacity: 0.35;
+  line-height: 1;
+  z-index: 2;
+  border-radius: 0;
+  padding: 0;
+  letter-spacing: -1px;
+  transition: opacity 0.5s ease;
+}
+
+.scale-group span {
+  display: block;
+  width: 90%;
+  height: 2px;
+  background: var(--grad-acc-1);
+}
+
+.scale-group h2 {
+  width: 90%;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--accent-soft);
+  letter-spacing: 0.5px;
+  padding: 14px 20px;
+  padding-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.scale-group:hover h2 {
+  transform: scale(1.04) translate(1px, -1px);
+}
+
+@media screen and (min-width: 1250px) {
+    .scale-group {
+        width: 280px;
+    }
+}

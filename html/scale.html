@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/sidebar.css" />
+    <link rel="stylesheet" href="../css/scale.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="icon" href="../img/common/logo-white.jpg" type="image/png" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Stringo</title>
+  </head>
+
+  <body class="flex flex-col min-h-screen">
+    <!-- Top nav (mobile) -->
+    <div
+      id="topNav"
+      class="fixed flex justify-center items-center w-full h-12 bg-[image:var(--grad-card-3)] shadow-[var(--card-sd-2)] px-8 py-3"
+    >
+      <button id="hamburgerBtn" class="text-[var(--bg-8)]">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </button>
+    </div>
+
+    <!-- Sidebar -->
+    <aside
+      id="sideBar"
+      class="fixed top-0 left-0 h-full z-50 overflow-hidden flex flex-col"
+    >
+      <button id="sideBarBtn" class="sidebar-toggle">
+        <i class="fa-solid fa-angles-right"></i>
+      </button>
+
+      <div class="sidebar-logo">
+        <img src="../img/common/logo-transparent.png" />
+        <h1
+          class="text-lg font-bold tracking-wider opacity-0 -translate-x-2 transition-[var(--sb-fade)]"
+        >
+          STRINGO
+        </h1>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="sidebar-group">
+          <a class="sidebar-item" href="../index.html" data-label="Home">
+            <i class="fa-solid fa-house"></i>
+            <p class="font-semibold">Home</p>
+          </a>
+        </div>
+        <div class="sidebar-group">
+          <a class="sidebar-item" href="./basic.html" data-label="Basic">
+            <i class="fa-solid fa-book"></i>
+            <p class="font-semibold">Basic</p>
+          </a>
+          <a class="sidebar-item" href="./chord.html" data-label="Chord">
+            <i class="fa-solid fa-music"></i>
+            <p class="font-semibold">Chord</p>
+          </a>
+          <a class="sidebar-item" href="./scale.html" data-label="Scale">
+            <i class="fa-solid fa-wave-square"></i>
+            <p class="font-semibold">Scale</p>
+          </a>
+        </div>
+        <div class="sidebar-group">
+          <a class="sidebar-item" href="./model.html" data-label="Model">
+            <i class="fa-solid fa-guitar"></i>
+            <p class="font-semibold">Model</p>
+          </a>
+        </div>
+        <div class="sidebar-group">
+          <a class="sidebar-item" href="./practice.html" data-label="Beginner">
+            <i class="fa-solid fa-dumbbell"></i>
+            <p class="font-semibold">Practice</p>
+          </a>
+        </div>
+      </nav>
+    </aside>
+
+    <div id="pageContent">
+      <section
+        class="flex flex-col justify-center items-center h-150 md:h-190 bg-[linear-gradient(var(--overlay-2),var(--overlay-3)),url('../img/scale/guitarBot-Top.jpg')] bg-center bg-cover shadow-[var(--card-sd-3)] p-4"
+      >
+        <h1
+          class="text-6xl font-bold tracking-wide text-[var(--bg-1)] text-shadow-lg"
+        >
+          Scale
+        </h1>
+
+        <p
+          class="text-xs sm:text-sm lg:text-base text-center font-semibold tracking-[2px] text-[var(--bg-1)] text-shadow-lg mt-4"
+        >
+          “Foundation of Melodies and Harmony”
+        </p>
+      </section>
+
+      <section
+        class="flex flex-col items-center bg-[var(--bg-1)] shadow-[var(--card-sd-3)] px-6 py-14"
+      >
+        <h1
+          class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-wide text-[var(--bg-8)] text-shadow-lg"
+        >
+          Major Scales
+        </h1>
+
+        <p
+          class="text-xs sm:text-sm lg:text-base text-center font-semibold tracking-normal text-[var(--bg-8)] text-shadow-lg my-2 md:my-4 mb-4"
+        >
+          “Whole Whole Half, Whole Whole Whole Half.”
+        </p>
+
+        <p
+          class="text-xs sm:text-sm lg:text-base font-semibold tracking-normal text-[var(--bg-2)] bg-[image:var(--grad-card-2)] rounded-xl p-4 my-2 md:my-4 mb-4"
+        >
+          * Do note that the image below are in standard tuning. Notes are
+          counted from right to left. *
+        </p>
+
+        <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-8 lg:gap-20 lg:px-20 mt-4 md:mt-8">
+          <div class="scale-group">
+            <div>
+              <img src="../img/scale/C major scales.png" alt="" />
+              <h1>01</h1>
+            </div>
+            <span></span>
+            <h2>C Major</h2>
+          </div>
+
+          <div class="scale-group">
+            <div>
+              <img src="../img/scale/D major scales.png" alt="" />
+              <h1>02</h1>
+            </div>
+            <span></span>
+            <h2>D Major</h2>
+          </div>
+
+          <div class="scale-group">
+            <div>
+              <img src="../img/scale/E major scales.png" alt="" />
+              <h1>03</h1>
+            </div>
+            <span></span>
+            <h2>E Major</h2>
+          </div>
+
+          <div class="scale-group">
+            <div>
+              <img src="../img/scale/F major scales.png" alt="" />
+              <h1>04</h1>
+            </div>
+            <span></span>
+            <h2>F Major</h2>
+          </div>
+
+          <div class="scale-group">
+            <div>
+              <img src="../img/scale/G major scales.png" alt="" />
+              <h1>05</h1>
+            </div>
+            <span></span>
+            <h2>G Major</h2>
+          </div>
+
+          <div class="scale-group">
+            <div>
+              <img src="../img/scale/A major scales.png" alt="" />
+              <h1>06</h1>
+            </div>
+            <span></span>
+            <h2>A Major</h2>
+          </div>
+          
+          <div class="scale-group">
+            <div>
+              <img src="../img/scale/B major scales.png" alt="" />
+              <h1>07</h1>
+            </div>
+            <span></span>
+            <h2>B Major</h2>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer
+        class="flex justify-center items-center w-full bg-[image:var(--grad-card-1)] shadow-[var(--card-sd-3)] p-4"
+      >
+        <h1>Created by Group 3 • © 2026 Stringo. All rights reserved.</h1>
+      </footer>
+    </div>
+
+    <script src="../js/sidebar.js"></script>
+  </body>
+</html>

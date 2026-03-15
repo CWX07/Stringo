@@ -1,0 +1,59 @@
+.guitar-split-item.brand-1,
+.guitar-split-item.brand-2 {
+  width: clamp(260px, 100%, 280px);
+  max-height: 300px;
+  border: var(--card-bd-1) var(--white-soft);
+  border-left: 4px solid var(--accent);
+  border-radius: 16px;
+  box-shadow: var(--card-sd-1);
+}
+
+.guitar-split-item.brand-1 div,
+.guitar-split-item.brand-2 div {
+  padding: 20px 24px;
+}
+
+.guitar-split-item.brand-1 div h2,
+.guitar-split-item.brand-2 div h2 {
+  font-size: 24px;
+} 
+
+.guitar-split-item.brand-2 {
+  border: var(--card-bd-1) var(--white-subtle);
+  border-left: 4px solid var(--accent-light);
+}
+
+@media screen and (min-width: 768px) {
+  .guitar-split-item.brand-1,
+  .guitar-split-item.brand-2 {
+    min-height: 300px;
+  }
+
+  .guitar-split-item.brand-1.telecaster,
+  .guitar-split-item.brand-2.telecaster {
+    width: 200px;
+    min-height: 240px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .guitar-split-item.brand-1,
+  .guitar-split-item.brand-2 {
+    width: 200px;
+    min-height: 250px;
+  }
+
+  .guitar-split-item.brand-1.telecaster,
+  .guitar-split-item.brand-2.telecaster {
+    width: 260px;
+    min-height: 280px;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .guitar-split-item.brand-1,
+  .guitar-split-item.brand-2 {
+    width: clamp(260px, 100%, 280px);
+    min-height: 300px;
+  }
+}

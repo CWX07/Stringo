@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/sidebar.css" />
+    <link rel="stylesheet" href="../css/chord.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="icon" href="../img/common/logo-white.jpg" type="image/png" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Stringo</title>
+  </head>
+
+  <body class="flex flex-col min-h-screen">
+    <!-- Top nav (mobile) -->
+    <div
+      id="topNav"
+      class="fixed flex justify-center items-center w-full h-12 bg-[image:var(--grad-card-3)] shadow-[var(--card-sd-2)] px-8 py-3"
+    >
+      <button id="hamburgerBtn" class="text-[var(--bg-8)]">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </button>
+    </div>
+
+    <!-- Sidebar -->
+    <aside
+      id="sideBar"
+      class="fixed top-0 left-0 h-full z-50 overflow-hidden flex flex-col"
+    >
+      <button id="sideBarBtn" class="sidebar-toggle">
+        <i class="fa-solid fa-angles-right"></i>
+      </button>
+
+      <div class="sidebar-logo">
+        <img src="../img/common/logo-transparent.png" />
+        <h1
+          class="text-lg font-bold tracking-wider opacity-0 -translate-x-2 transition-[var(--sb-fade)]"
+        >
+          STRINGO
+        </h1>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="sidebar-group">
+          <a class="sidebar-item" href="../index.html" data-label="Home">
+            <i class="fa-solid fa-house"></i>
+            <p class="font-bold">Home</p>
+          </a>
+        </div>
+        <div class="sidebar-group">
+          <a class="sidebar-item" href="./basic.html" data-label="Basic">
+            <i class="fa-solid fa-book"></i>
+            <p class="font-bold">Basic</p>
+          </a>
+          <a class="sidebar-item" href="./chord.html" data-label="Chord">
+            <i class="fa-solid fa-music"></i>
+            <p class="font-bold">Chord</p>
+          </a>
+          <a class="sidebar-item" href="./scale.html" data-label="Scale">
+            <i class="fa-solid fa-wave-square"></i>
+            <p class="font-bold">Scale</p>
+          </a>
+        </div>
+        <div class="sidebar-group">
+          <a class="sidebar-item" href="./model.html" data-label="Model">
+            <i class="fa-solid fa-guitar"></i>
+            <p class="font-bold">Model</p>
+          </a>
+        </div>
+        <div class="sidebar-group">
+          <a class="sidebar-item" href="./practice.html" data-label="Beginner">
+            <i class="fa-solid fa-dumbbell"></i>
+            <p class="font-bold">Practice</p>
+          </a>
+        </div>
+      </nav>
+    </aside>
+
+    <div id="pageContent">
+      <section
+        class="flex flex-col justify-center items-center h-150 md:h-190 bg-[linear-gradient(var(--overlay-2),var(--overlay-3)),url('../img/chord/faintBlueGuitar.jpeg')] xl:bg-center bg-cover shadow-[var(--card-sd-3)] p-4"
+      >
+        <h1
+          class="text-6xl font-bold tracking-wide text-[var(--bg-1)] text-shadow-lg"
+        >
+          Chord
+        </h1>
+
+        <p
+          class="text-xs sm:text-sm lg:text-base text-center font-semibold tracking-[2px] text-[var(--bg-1)] text-shadow-lg mt-4"
+        >
+          "Combination of notes creates powerful music"
+        </p>
+      </section>
+
+      <section
+        class="flex flex-col items-center bg-[var(--bg-1)] shadow-[var(--card-sd-3)] px-6 py-14"
+      >
+        <h1
+          class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-wide text-[var(--bg-8)] text-shadow-lg"
+        >
+          Major Chords
+        </h1>
+
+        <p
+          class="text-xs sm:text-sm lg:text-base text-center font-semibold tracking-normal text-[var(--bg-8)] text-shadow-lg my-2 md:my-4 mb-4"
+        >
+          "1 - 3 - 5 makes it bright."
+        </p>
+
+        <p
+          class="text-xs sm:text-sm lg:text-base font-semibold tracking-normal text-[var(--bg-2)] bg-[image:var(--grad-card-2)] rounded-xl p-4 my-2 md:my-4 mb-4"
+        >
+          * Do note that the image below are in standard tuning. Notes are
+          counted from right to left. *
+        </p>
+
+        <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-8 lg:gap-20 lg:px-16 py-6 md:py-8">
+          <div class="chord-group">
+            <img src="../img/chord/chords/C major chord_ C E G.png" alt="" />
+            <span>01</span>
+            <div>
+              <h2>C Major</h2>
+              <p>
+                <span>C</span>
+                <span>E</span>
+                <span>G</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="w-full grid grid-cols-1 place-items-center gap-2">
+            <div class="chord-group">
+              <img src="../img/chord/chords/D major chord_ D F♯ A.png" alt="" />
+              <span>02</span>
+              <div>
+                <h2>D Major</h2>
+                <p>
+                  <span>D</span>
+                  <span>F♯</span>
+                  <span>A</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full grid grid-cols-1 place-items-center gap-2">
+            <div class="chord-group">
+              <img src="../img/chord/chords/E major chord_ E G♯ B.png" alt="" />
+              <span>03</span>
+              <div>
+                <h2>E Major</h2>
+                <p>
+                  <span>E</span>
+                  <span>G♯</span>
+                  <span>B</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full grid grid-cols-1 place-items-center gap-2">
+            <div class="chord-group">
+              <img src="../img/chord/chords/F major chord_ F A C.png" alt="" />
+              <span>04</span>
+              <div>
+                <h2>F Major</h2>
+                <p>
+                  <span>F</span>
+                  <span>A♯</span>
+                  <span>C</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full grid grid-cols-1 place-items-center gap-2">
+            <div class="chord-group">
+              <img src="../img/chord/chords/G major chord_ G B D.png" alt="" />
+              <span>05</span>
+              <div>
+                <h2>G Major</h2>
+                <p>
+                  <span>G</span>
+                  <span>B</span>
+                  <span>D</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full grid grid-cols-1 place-items-center gap-2">
+            <div class="chord-group">
+              <img src="../img/chord/chords/A major chord_ A C♯ E.png" alt="" />
+              <span>06</span>
+              <div>
+                <h2>A Major</h2>
+                <p>
+                  <span>A</span>
+                  <span>C♯</span>
+                  <span>E</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full grid grid-cols-1 place-items-center gap-2">
+            <div class="chord-group">
+              <img src="../img/chord/chords/B major chord_ B D♯ F♯.png" alt="" />
+              <span>07</span>
+              <div>
+                <h2>B Major</h2>
+                <p>
+                  <span>B</span>
+                  <span>D♯</span>
+                  <span>F♯</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer
+        class="flex justify-center items-center w-full bg-[image:var(--grad-card-1)] shadow-[var(--card-sd-3)] p-4"
+      >
+        <h1>Created by Group 3 • © 2026 Stringo. All rights reserved.</h1>
+      </footer>
+    </div>
+
+    <script src="../js/sidebar.js"></script>
+  </body>
+</html>

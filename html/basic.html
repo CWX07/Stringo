@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/sidebar.css" />
+    <link rel="stylesheet" href="../css/basic.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="icon" href="../img/common/logo-white.jpg" type="image/png" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Stringo</title>
+  </head>
+
+  <body class="flex flex-col min-h-screen">
+    <!-- Top nav (mobile) -->
+    <div
+      id="topNav"
+      class="fixed flex justify-center items-center w-full h-12 bg-[image:var(--grad-card-3)] shadow-[var(--card-sd-2)] px-8 py-3"
+    >
+      <button id="hamburgerBtn" class="text-[var(--bg-8)]">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </button>
+    </div>
+
+    <!-- Sidebar -->
+    <aside
+      id="sideBar"
+      class="fixed top-0 left-0 h-full z-50 overflow-hidden flex flex-col"
+    >
+      <button id="sideBarBtn" class="sidebar-toggle">
+        <i class="fa-solid fa-angles-right"></i>
+      </button>
+
+      <div class="sidebar-logo">
+        <img src="../img/common/logo-transparent.png" />
+        <h1
+          class="text-lg font-bold tracking-wider opacity-0 -translate-x-2 transition-[var(--sb-fade)]"
+        >
+          STRINGO
+        </h1>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="sidebar-group">
+          <a class="sidebar-item" href="../index.html" data-label="Home">
+            <i class="fa-solid fa-house"></i>
+            <p class="font-semibold">Home</p>
+          </a>
+        </div>
+        <div class="sidebar-group">
+          <a class="sidebar-item" href="./basic.html" data-label="Basic">
+            <i class="fa-solid fa-book"></i>
+            <p class="font-semibold">Basic</p>
+          </a>
+          <a class="sidebar-item" href="./chord.html" data-label="Chord">
+            <i class="fa-solid fa-music"></i>
+            <p class="font-semibold">Chord</p>
+          </a>
+          <a class="sidebar-item" href="./scale.html" data-label="Scale">
+            <i class="fa-solid fa-wave-square"></i>
+            <p class="font-semibold">Scale</p>
+          </a>
+        </div>
+        <div class="sidebar-group">
+          <a class="sidebar-item" href="./model.html" data-label="Model">
+            <i class="fa-solid fa-guitar"></i>
+            <p class="font-semibold">Model</p>
+          </a>
+        </div>
+        <div class="sidebar-group">
+          <a class="sidebar-item" href="./practice.html" data-label="Beginner">
+            <i class="fa-solid fa-dumbbell"></i>
+            <p class="font-semibold">Practice</p>
+          </a>
+        </div>
+      </nav>
+    </aside>
+
+    <div id="pageContent">
+      <section
+        class="flex flex-col justify-center items-center h-150 md:h-190 bg-[linear-gradient(var(--overlay-1),var(--overlay-3)),url('../img/basic/basic-bg.jpg')] xl:bg-center bg-cover shadow-[var(--card-sd-3)] p-4"
+      >
+        <h1
+          class="text-6xl font-bold tracking-wide text-[var(--bg-1)] text-shadow-lg"
+        >
+          BASIC
+        </h1>
+
+        <p
+          class="text-xs sm:text-sm lg:text-base text-center font-semibold tracking-[2px] text-[var(--bg-1)] text-shadow-lg mt-4"
+        >
+          "Start your guitar journey — simple, clear, essential."
+        </p>
+      </section>
+
+      <section
+        class="flex flex-col items-center bg-[var(--bg-1)] shadow-[var(--card-sd-3)] px-6 py-12"
+      >
+        <h1
+          class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-wide text-[var(--bg-8)] text-shadow-lg"
+        >
+          Parts
+        </h1>
+
+        <p
+          class="text-xs sm:text-sm lg:text-base text-center font-semibold tracking-wide text-[var(--bg-8)] text-shadow-lg my-2 md:my-4 mb-4"
+        >
+          “Understand every part of the guitar and how it creates sound.”
+        </p>
+
+        <img
+          src="../img/basic/guitarDiagram.jpeg"
+          class="w-full md:w-150 h-auto shadow-[var(--card-sd-2)] border-1 border-[var(--bg-5)] rounded-3xl p-4 mt-4 transition-all duration-300 hover:scale-[1.05]"
+          alt=""
+        />
+
+        <div class="flash-container">
+          <div class="flash-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <div class="ghost-num">01</div>
+                <h1>Headstock</h1>
+                <div class="tap-hint">tap ↻</div>
+              </div>
+              <div class="card-back">
+                <div class="ghost-num">01</div>
+                <p>Top part that holds the tuning pegs</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flash-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <div class="ghost-num">02</div>
+                <h1>Tuning Pegs</h1>
+                <div class="tap-hint">tap ↻</div>
+              </div>
+              <div class="card-back">
+                <div class="ghost-num">02</div>
+                <p>Used to tighten or loosen strings to tune the guitar</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flash-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <div class="ghost-num">03</div>
+                <h1>Neck</h1>
+                <div class="tap-hint">tap ↻</div>
+              </div>
+              <div class="card-back">
+                <div class="ghost-num">03</div>
+                <p>Long part where you press the strings</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flash-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <div class="ghost-num">04</div>
+                <h1>Frets</h1>
+                <div class="tap-hint">tap ↻</div>
+              </div>
+              <div class="card-back">
+                <div class="ghost-num">04</div>
+                <p>Metal strips that divide the neck into notes</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flash-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <div class="ghost-num">05</div>
+                <h1>Body</h1>
+                <div class="tap-hint">tap ↻</div>
+              </div>
+              <div class="card-back">
+                <div class="ghost-num">05</div>
+                <p>The main part that produces and amplifies sound</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flash-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <div class="ghost-num">06</div>
+                <h1>Bridge</h1>
+                <div class="tap-hint">tap ↻</div>
+              </div>
+              <div class="card-back">
+                <div class="ghost-num">06</div>
+                <p>Holds the strings in place on the body</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="flex flex-col items-center bg-[linear-gradient(var(--overlay-3),var(--overlay-2)),url('../img/basic/strings.jpg')] bg-center bg-cover shadow-[var(--card-sd-3)] px-6 py-12"
+      >
+        <h1
+          class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-wide text-[var(--bg-1)] text-shadow-lg"
+        >
+          Strings
+        </h1>
+
+        <p
+          class="text-xs sm:text-sm md:text-base text-center font-semibold tracking-wide text-[var(--bg-1)] text-shadow-lg my-2 md:my-4 mb-4"
+        >
+          “Know the strings, know the sound.”
+        </p>
+
+        <img
+          src="../img/basic/stringDiagram.jpeg"
+          class="w-full md:w-80 lg:w-100 h-auto shadow-[var(--card-sd-2)] border-1 border-[var(--bg-5)] rounded-3xl mt-4 transition-all duration-300 hover:scale-[1.05]"
+          alt=""
+        />
+
+        <div class="grid grid-rows-4 md:grid-rows-none md:grid-cols-4 justify-center gap-6 mt-12">
+          <div class="string-content">
+            <div class="header-num">01</div>
+            <p class="string-desc">A standard guitar has 6 strings. Each strings create different musical notes.</p>
+          </div>
+          <div class="string-content">
+            <div class="header-num">02</div>
+            <p class="string-desc">
+              String names (Standard Tuning): <br>E - A - D - G - B - E.
+            </p>
+          </div>
+          <div class="string-content">
+            <div class="header-num">03</div>
+            <p class="string-desc">
+              Use the mnemonic: <br>“Eat All Day Get Big Energy” <br>to remember
+              string order.
+            </p>
+          </div>
+
+          <div class="string-content">
+            <div class="header-num">04</div>
+            <p class="string-desc">
+              Each string can be played open (no frets) or pressed on a fret to
+              get different notes.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="flex flex-col items-center bg-[var(--bg-1)] shadow-[var(--card-sd-3)] px-6 py-12"
+      >
+        <h1
+          class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-wide text-[var(--bg-8)] text-shadow-lg"
+        >
+          Fretboards
+        </h1>
+
+        <p
+          class="text-xs sm:text-sm lg:text-base text-center font-semibold tracking-wide text-[var(--bg-8)] text-shadow-lg my-2 md:my-4 mb-4"
+        >
+          “Understand every part of the guitar and how it creates sound.”
+        </p>
+
+        <img
+          src="../img/basic/fretboardDiagram.png"
+          class="w-full md:w-150 lg:w-200 h-auto shadow-[var(--card-sd-2)] border-1 border-[var(--bg-5)] rounded-3xl mt-4 transition-all duration-300 hover:scale-[1.05]"
+          alt=""
+        />
+
+        <div
+          class="flex items-center justify-end gap-1.5 w-full max-w-2xl mb-3 text-[var(--bg-7)] text-[10px] tracking-[1.5px] uppercase mx-2 mt-8"
+        >
+          <i class="fa-solid fa-arrow-right text-[10px]"></i> swipe
+        </div>
+
+        <div class="scroll-track w-full" id="fretTrack">
+          <div class="fret-card">
+            <div class="header-num fret">01</div>
+            <p>
+              Frets are the thin metal strips on the guitar neck that divide it
+              into sections.
+            </p>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+          <div class="fret-card">
+            <div class="header-num fret">02</div>
+            <p>
+              Each fret raises the pitch of a string by one semitone when
+              pressed down.
+            </p>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+          <div class="fret-card">
+            <div class="header-num fret">03</div>
+            <p>
+              Most guitars have 19 to 24 frets. The higher the fret number, the
+              higher the note.
+            </p>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+          <div class="fret-card">
+            <div class="header-num fret">04</div>
+            <p>
+              Fret markers (dots) on the 3rd, 5th, 7th, 9th, and 12th frets help
+              you navigate quickly.
+            </p>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+
+        <div class="flex justify-center gap-1.5 mt-4" id="fretDots">
+          <div class="fret-dot active"></div>
+          <div class="fret-dot"></div>
+          <div class="fret-dot"></div>
+          <div class="fret-dot"></div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer
+        class="flex justify-center items-center w-full bg-[image:var(--grad-card-1)] shadow-[var(--card-sd-3)] p-4"
+      >
+        <h1>Created by Group 3 • © 2026 Stringo. All rights reserved.</h1>
+      </footer>
+    </div>
+
+    <script src="../js/sidebar.js"></script>
+    <script src="../js/basic.js"></script>
+  </body>
+</html>

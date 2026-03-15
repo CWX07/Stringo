@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/sidebar.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="icon" href="./img/common/logo-white.jpg" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Stringo</title>
+  </head>
+
+  <body class="flex flex-col min-h-screen">
+    <!-- Top nav (mobile) -->
+    <div
+      id="topNav"
+      class="fixed flex justify-center items-center w-full h-12 bg-[image:var(--grad-card-3)] shadow-[var(--card-sd-2)] px-6 py-3"
+    >
+      <button id="hamburgerBtn" class="text-[var(--bg-8)]">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </button>
+    </div>
+
+    <!-- Sidebar -->
+    <aside
+      id="sideBar"
+      class="fixed top-0 left-0 h-full z-50 overflow-hidden flex flex-col"
+    >
+      <button id="sideBarBtn" class="sidebar-toggle">
+        <i class="fa-solid fa-angles-right"></i>
+      </button>
+
+      <div class="sidebar-logo">
+        <img src="./img/common/logo-transparent.png" />
+        <h1
+          class="text-lg font-bold tracking-wider opacity-0 -translate-x-2 transition-[var(--sb-fade)]"
+        >
+          STRINGO
+        </h1>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="sidebar-group">
+          <a class="sidebar-item" href="./index.html" data-label="Home">
+            <i class="fa-solid fa-house"></i>
+            <p class="font-semibold">Home</p>
+          </a>
+        </div>
+        <div class="sidebar-group">
+          <a class="sidebar-item" href="./html/basic.html" data-label="Basic">
+            <i class="fa-solid fa-book"></i>
+            <p class="font-semibold">Basic</p>
+          </a>
+          <a class="sidebar-item" href="./html/chord.html" data-label="Chord">
+            <i class="fa-solid fa-music"></i>
+            <p class="font-semibold">Chord</p>
+          </a>
+          <a class="sidebar-item" href="./html/scale.html" data-label="Scale">
+            <i class="fa-solid fa-wave-square"></i>
+            <p class="font-semibold">Scale</p>
+          </a>
+        </div>
+        <div class="sidebar-group">
+          <a class="sidebar-item" href="./html/model.html" data-label="Model">
+            <i class="fa-solid fa-guitar"></i>
+            <p class="font-semibold">Model</p>
+          </a>
+        </div>
+        <div class="sidebar-group">
+          <a class="sidebar-item" href="./html/practice.html" data-label="Beginner">
+            <i class="fa-solid fa-dumbbell"></i>
+            <p class="font-semibold">Practice</p>
+          </a>
+        </div>
+      </nav>
+    </aside>
+
+    <div id="pageContent">
+      <section
+        class="flex flex-col justify-center items-center h-150 md:h-190 bg-[image:var(--grad-card-1)] shadow-[var(--card-sd-3)] title"
+      >
+<<<<<<< HEAD
+        <h1 class="text-6xl font-bold text-transparent tracking-wide text-shadow-lg bg-[url('../img/home/imgText1.jpg')] bg-cover bg-clip-text">
+=======
+        <h1 class="text-6xl font-bold tracking-wide text-shadow-lg imageText1">
+>>>>>>> old-origin
+          STRINGO
+        </h1>
+        
+        <p
+          class="text-xs sm:text-sm lg:text-base text-center font-semibold tracking-[2px] text-[var(--bg-6)] mt-4"
+        >
+          "Learn the Guitar. Play the Music. Inspire the World."
+        </p>
+      </section>
+
+      <section
+        class="flex flex-col justify-center items-center md:h-150 bg-[linear-gradient(var(--overlay-3),var(--overlay-2)),url('./img/home/brownGuitar.jpg')] bg-center bg-cover shadow-[var(--card-sd-3)] px-6 py-12"
+      >
+        <h1
+          class="text-2xl md:text-3xl lg:text-4xl md:text-3xl font-bold tracking-wider text-[var(--bg-1)] text-center mt-4 mb-2"
+        >
+          Get STARTED
+        </h1>
+        <p
+          class="text-xs sm:text-sm lg:text-base tracking-wider text-[var(--bg-1)] text-center mt-2 mb-6"
+        >
+          "Master the foundations of guitar playing."
+        </p>
+
+        <div
+          class="flex items-center justify-end gap-1.5 w-full max-w-2xl mb-3 text-[rgba(255,255,255,0.4)] text-[10px] tracking-[1.5px] uppercase"
+        >
+          <i class="fa-solid fa-arrow-right text-[10px]"></i> swipe
+        </div>
+
+        <div class="scroll-track w-full">
+          <a class="snap-card" href="./html/basic.html">
+            <h1>01</h1>
+            <div class="flex justify-between items-start">
+              <img
+                src="./img/home/basic-1.jpeg"
+                alt="Basic"
+              />
+            </div>
+
+            <div class="flex flex-1 flex-col gap-2 mx-2 md:mx-3 lg:mx-4">
+              <h2>Basic</h2>
+              <p>"Start your guitar journey — simple, clear, essential."</p>
+            </div>
+
+            <div class="snap-arrow">
+              Explore <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </a>
+
+          <a class="snap-card" href="./html/chord.html">
+            <h1>02</h1>
+            <div class="flex justify-between items-start">
+              <img
+                src="./img/home/chord-1.jpeg"
+                alt="Chord"
+              />
+            </div>
+
+            <div class="flex flex-1 flex-col gap-2 mx-2 md:mx-3 lg:mx-4">
+              <h2>Chord</h2>
+              <p>"Build harmony — learn the shapes that make music."</p>
+            </div>
+
+            <div class="snap-arrow">
+              Explore <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </a>
+
+          <a class="snap-card" href="./html/scale.html">
+            <h1>03</h1>
+            <div class="flex justify-between items-start">
+              <img
+                src="./img/home/scale-2.jpeg"
+                alt="Scales"
+              />
+            </div>
+
+            <div class="flex flex-1 flex-col gap-2 mx-2 md:mx-3 lg:mx-4">
+              <h2>Scales</h2>
+              <p>"Unlock melodies — master the patterns that create solos."</p>
+            </div>
+
+            <div class="snap-arrow">
+              Explore <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </a>
+        </div>
+
+        <div class="flex justify-center gap-1.5 mt-4" id="snapDots">
+          <div class="snap-dot active"></div>
+          <div class="snap-dot"></div>
+          <div class="snap-dot"></div>
+        </div>
+      </section>
+
+      <section
+<<<<<<< HEAD
+        class="flex flex-col items-center bg-[linear-gradient(var(--grad-card-1))] shadow-[var(--card-sd-3)] px-6 py-12"
+=======
+        class="flex flex-col items-center md:h-180 bg-[linear-gradient(var(--grad-card-1))] shadow-[var(--card-sd-3)] px-6 py-12"
+>>>>>>> old-origin
+      >
+        <h1
+          class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-wide text-[var(--bg-8)] text-center border-b-2 border-[var(--bg-8)] mt-4 mb-2 px-4"
+        >
+          Know MORE
+          <i class="fa-solid fa-circle-info"></i>
+        </h1>
+        <p
+          class="text-xs sm:text-sm lg:text-base tracking-wider text-[var(--bg-8)] text-center mt-2 mb-10"
+        >
+          "Explore the world of guitars."
+        </p>
+
+<<<<<<< HEAD
+        <div class="grid grid-cols-2 w-full h-full gap-1 md:px-10">
+          <a class="guitar-split-item" href="./html/model.html#stratocaster">
+            <img src="./img/home/Stratocaster guitar.jpg" alt="Model" />
+            <span>Explore</span>
+            <div>
+              <h2>Stratocaster</h2>
+              <p>“Built for speed and shredding.”</p>
+            </div>
+          </a>
+          <a class="guitar-split-item" href="./html/model.html#telecaster">
+            <img src="./img/home/Telecaster guitar.jpg" alt="Brand" />
+            <span>Explore</span>
+            <div>
+              <h2>Telecaster</h2>
+              <p>“Sharp tone. Pure character.”</p>
+            </div>
+          </a>
+
+          <a class="guitar-split-item" href="./html/model.html#soloist">
+            <img src="./img/home/Soloist guitar.jpg" alt="Model" />
+            <span>Explore</span>
+            <div>
+              <h2>Soloist</h2>
+              <p>"Precision for performance.”</p>
+            </div>
+          </a>
+          <a class="guitar-split-item" href="./html/model.html#flyingV">
+            <img src="./img/home/Flying V guitar.jpg" alt="Brand" />
+            <span>Explore</span>
+            <div>
+              <h2>Flying V</h2>
+              <p>“Stand out. Play loud.”</p>
+=======
+        <div class="flex w-full h-full gap-0.5">
+          <a class="guitar-split-item" href="./html/model.html">
+            <img src="./img/home/guitarLogo.jpeg" alt="Model" />
+            <span>Explore</span>
+            <div>
+              <h2>Model</h2>
+              <p>"Find the guitar style that fits your sound."</p>
+            </div>
+          </a>
+          <a class="guitar-split-item" href="./html/brand">
+            <img src="./img/home/brand-1.jpeg" alt="Brand" />
+            <span>Explore</span>
+            <div>
+              <h2>Brand</h2>
+              <p>"Discover the names behind legendary guitars."</p>
+>>>>>>> old-origin
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section
+        class="flex flex-col items-center md:h-180 bg-[linear-gradient(var(--overlay-3),var(--overlay-2)),url('./img/home/bluishGuitar.jpg')] bg-center bg-cover shadow-[var(--card-sd-3)] px-6 py-12"
+      >
+        <h1
+          class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-wider text-[var(--bg-1)] text-center mt-4 mb-2"
+        >
+          Build Your SKILLS
+          <i class="fa-solid fa-icons"></i>
+        </h1>
+        <p
+          class="text-xs sm:text-sm lg:text-base tracking-wider text-[var(--bg-1)] text-center mt-2 mb-10"
+        >
+          "Practice today, play better tomorrow."
+        </p>
+
+        <div class="flex flex-col justify-center w-full max-w-2xl h-full gap-4 md:gap-8">
+<<<<<<< HEAD
+          <a class="practice-item beginner" href="./html/practice.html#beginner">
+=======
+          <a class="practice-item beginner" href="./html/practice.html">
+>>>>>>> old-origin
+            <img src="./img/home/quaver.jpeg" alt="Beginner" />
+            <div>
+              <h2>
+                <i class="fa-solid fa-play"></i>
+                Beginner</h2>
+              <p>
+                "Simple drill designed for players just starting their guitar
+                journey."
+              </p>
+            </div>
+            <span>Beginner</span>
+          </a>
+<<<<<<< HEAD
+          <a class="practice-item intermediate" href="./html/practice.html#intermediate">
+=======
+          <a class="practice-item intermediate" href="./html/practice.html">
+>>>>>>> old-origin
+            <img src="./img/home/intermediate-1.png" alt="Intermediate" />
+            <div>
+              <h2>
+                <i class="fa-solid fa-list"></i>
+                Intermediate</h2>
+              <p>
+                "Take your skills further with practices that challenge rhythm and
+                technique."
+              </p>
+            </div>
+            <span>Intermediate</span>
+          </a>
+<<<<<<< HEAD
+          <a class="practice-item advanced" href="./html/practice.html#advanced">
+=======
+          <a class="practice-item advanced" href="./html/practice.html">
+>>>>>>> old-origin
+            <img src="./img/home/advanced-1.png" alt="Advanced" />
+            <div>
+              <h2>
+                <i class="fa-solid fa-fire"></i>
+                Advanced</h2>
+              <p>
+                "Master complex practices and push your guitar playing to the next
+                level."
+              </p>
+            </div>
+            <span>Advanced</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer
+        class="flex justify-center items-center w-full bg-[image:var(--grad-card-1)] shadow-[var(--card-sd-3)] p-4"
+      >
+        <h1>Created by Group 3 • © 2026 Stringo. All rights reserved.</h1>
+      </footer>
+    </div>
+
+    <script src="./js/sidebar.js"></script>
+    <script src="./js/home.js"></script>
+  </body>
+</html>

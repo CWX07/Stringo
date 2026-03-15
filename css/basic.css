@@ -1,0 +1,279 @@
+.flash-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 40px;
+}
+
+.flash-card {
+  height: 130px;
+  border-radius: 12px;
+  box-shadow: var(--card-sd-1);
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.flash-card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  padding: 16px 18px;
+  overflow: hidden;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.card-front {
+  background: var(--grad-card-2);
+  border: var(--card-bd-1) rgba(200, 134, 10, 0.2);
+  transition: border-color 0.2s ease;
+}
+
+.flash-card:not(.flipped):hover .card-front {
+  border-color: rgba(200, 134, 10, 0.55);
+}
+
+.card-front .ghost-num,
+.card-back .ghost-num {
+  position: absolute;
+  right: 10px;
+  top: 4px;
+  font-family: "Playfair Display", serif;
+  font-size: 58px;
+  font-weight: 900;
+  color: var(--accent);
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+
+  opacity: 0.15;
+}
+
+.card-front h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--bg-1);
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 1;
+  margin: auto 0;
+}
+
+.card-front .tap-hint {
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(200, 134, 10, 0.5);
+  position: absolute;
+  bottom: 12px;
+  right: 14px;
+}
+
+.card-back {
+  background: linear-gradient(
+    to bottom right,
+    var(--accent) 0%,
+    var(--accent-softer) 100%
+  );
+}
+
+.card-back p {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--bg-9);
+  line-height: 1.5;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+  margin: auto 0;
+}
+
+@media screen and (min-width: 768px) {
+  .flash-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+  }
+
+  .flash-card {
+    height: 140px;
+  }
+
+  .card-front h1 {
+    font-size: 20px;
+  }
+
+  .card-back p {
+    font-size: 14px;
+  }
+}
+
+.string-content {
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  background: var(--white-faint);
+  border: var(--card-bd-1) var(--white-subtle);
+  border-radius: 16px;
+
+  padding: 12px 16px;
+}
+
+.header-num {
+  font-family: "Playfair Display", serif;
+  font-size: 58px;
+  font-weight: 900;
+  color: var(--accent);
+  line-height: 1;
+  pointer-events: none;
+}
+
+.string-desc {
+  color: var(--bg-1);
+  font-size: 14px;
+  display: flex;
+  flex: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .string-desc {
+    font-size: 16px;
+  }
+
+  .string-content {
+    gap: 16px;
+    padding: 20px 16px;
+  }
+}
+
+.scroll-track {
+  width: 90%;
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 15px 4px;
+  scrollbar-width: none;
+}
+
+.scroll-track::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .scroll-track {
+    padding: 15px;
+  }
+}
+
+.fret-card {
+  scroll-snap-align: center;
+  flex-shrink: 0;
+  width: calc(100% - 28px);
+  min-height: 200px;
+  background: var(--grad-card-2);
+  border: var(--card-bd-1) rgba(200, 134, 10, 0.2);
+  box-shadow: var(--card-sd-1);
+  border-radius: 16px;
+  padding: 12px 26px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.25s ease;
+}
+
+.header-num.fret {
+  color: var(--accent-light);
+}
+
+.fret-card p {
+  color: var(--bg-1);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.fret-card i {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-self: flex-end;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--accent-light);
+  margin-top: 4px;
+}
+
+.fret-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  transition:
+    width 0.25s ease,
+    background 0.25s ease;
+}
+
+.fret-dot.active {
+  background: var(--accent);
+  width: 18px;
+  border-radius: 3px;
+}
+
+@media screen and (min-width: 768px) {
+  .scroll-track {
+    width: 80%;
+  }
+  .fret-card {
+    width: calc(100% - 50px);
+  }
+
+  .fret-card p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .scroll-track {
+    width: 70%;
+  }
+
+  .header-num.fret {
+    font-size: 70px;
+  }
+
+  .fret-card p {
+    font-size: 18px;
+  }
+}
