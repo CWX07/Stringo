@@ -20,26 +20,6 @@
   pointer-events: none;
 }
 
-.scroll-track {
-  width: 90%;
-  display: flex;
-  gap: 12px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  padding: 15px 4px;
-  scrollbar-width: none;
-}
-
-.scroll-track::-webkit-scrollbar {
-  display: none;
-}
-
-@media screen and (min-width: 768px) {
-  .scroll-track {
-    padding: 15px;
-  }
-}
-
 .snap-card {
   scroll-snap-align: center;
   flex-shrink: 0;

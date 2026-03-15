@@ -1,23 +1,13 @@
-.scroll-track {
-  width: 90%;
-  display: flex;
-  gap: 12px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  background: transparent;
-  padding: 15px 4px;
-  scrollbar-width: none;
+.scroll-track.beginner::-webkit-scrollbar-thumb {
+  background: var(--color-beginner);
 }
 
-.scroll-track::-webkit-scrollbar {
-  display: none;
+.scroll-track.intermediate::-webkit-scrollbar-thumb {
+  background: var(--accent-light);
 }
 
-@media screen and (min-width: 768px) {
-  .scroll-track {
-    width: 75%;
-    padding: 15px;
-  }
+.scroll-track.advanced::-webkit-scrollbar-thumb {
+  background: var(--color-advanced);
 }
 
 .practice-card {
@@ -169,7 +159,6 @@
   opacity: 0.8;
 }
 
-
 @media screen and (min-width: 768px) {
   .practice-card .body .view {
     font-size: 13px;
@@ -180,16 +169,38 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--accent-soft);
   transition:
     width 0.25s ease,
     background 0.25s ease;
 }
 
+.practice-dot.beginner {
+  background: var(--color-beginner);
+}
+
+.practice-dot.intermediate {
+  background: var(--accent-soft);
+}
+
+.practice-dot.advanced {
+  background: var(--color-advanced);
+}
+
 .practice-dot.active {
-  background: var(--accent);
   width: 18px;
   border-radius: 3px;
+}
+
+.practice-dot.beginner.active {
+  background: rgb(66, 149, 77);
+}
+
+.practice-dot.intermediate.active {
+  background: var(--accent);
+}
+
+.practice-dot.advanced.active {
+  background: rgb(182, 63, 63);
 }
 
 @media screen and (min-width: 768px) {
