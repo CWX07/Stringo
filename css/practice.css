@@ -1,3 +1,4 @@
+/* Scrollbar colour per difficulty */
 .scroll-track.beginner::-webkit-scrollbar-thumb {
   background: var(--color-beginner);
 }
@@ -10,6 +11,7 @@
   background: var(--color-advanced);
 }
 
+/* Practice cards */
 .practice-card {
   scroll-snap-align: center;
   flex-shrink: 0;
@@ -25,6 +27,7 @@
     box-shadow 0.3s ease;
 }
 
+/* Background per difficulty */
 .practice-card.beginner,
 .practice-card.advanced {
   background: var(--grad-card-1);
@@ -34,6 +37,7 @@
   background: var(--white-soft);
 }
 
+/* Lifts up on hover */
 .practice-card:hover {
   transform: translateY(-3px);
 }
@@ -67,7 +71,7 @@
   background: linear-gradient(to right, transparent 50%, var(--accent-darker));
 }
 
-/* Beginner badge */
+/* Difficulty badge — top right */
 .practice-card .badge {
   position: absolute;
   top: 12px;
@@ -81,6 +85,7 @@
   z-index: 2;
 }
 
+/* Badge colours per difficulty */
 .practice-card.beginner .badge {
   background: rgba(107, 186, 117, 0.15);
   border: var(--card-bd-1) var(--color-beginner);
@@ -113,6 +118,7 @@
   gap: 10px;
 }
 
+/* Large level number */
 .practice-card .body .num {
   font-family: "Playfair Display", serif;
   font-size: 40px;
@@ -128,6 +134,7 @@
   letter-spacing: 0.5px;
 }
 
+/* "View →" label */
 .practice-card .body .view {
   height: 100%;
   font-size: 12px;
@@ -138,6 +145,7 @@
   gap: 5px;
 }
 
+/* Text colours per difficulty */
 .practice-card.beginner .body .num,
 .practice-card.beginner .body .title,
 .practice-card.beginner .body .view {
@@ -165,6 +173,7 @@
   }
 }
 
+/* Practice scroll dots */
 .practice-dot {
   width: 6px;
   height: 6px;
@@ -174,6 +183,7 @@
     background 0.25s ease;
 }
 
+/* Base colour per difficulty */
 .practice-dot.beginner {
   background: var(--color-beginner);
 }
@@ -186,6 +196,7 @@
   background: var(--color-advanced);
 }
 
+/* Active dot stretches into a pill for current card */
 .practice-dot.active {
   width: 18px;
   border-radius: 3px;

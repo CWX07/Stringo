@@ -4,16 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/sidebar.css" />
     <link rel="stylesheet" href="./css/home.css" />
 
+    <!-- Font Awesome CDN -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
 
-    <link rel="icon" href="/Stringo/img/common/logo-white.jpg" type="image/png">
+    <!-- Website icon -->
+    <link
+      rel="icon"
+      href="/Stringo/img/common/logo-white.jpg"
+      type="image/png"
+    />
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <title>Stringo</title>
@@ -35,10 +43,12 @@
       id="sideBar"
       class="fixed top-0 left-0 h-full z-50 overflow-hidden flex flex-col"
     >
+      <!-- Expand / collapse toggle -->
       <button id="sideBarBtn" class="sidebar-toggle">
         <i class="fa-solid fa-angles-right"></i>
       </button>
 
+      <!-- Logo -->
       <div class="sidebar-logo">
         <img src="./img/common/logo-transparent.png" />
         <h1
@@ -48,6 +58,7 @@
         </h1>
       </div>
 
+      <!-- Nav links -->
       <nav class="sidebar-nav">
         <div class="sidebar-group">
           <a class="sidebar-item" href="./index.html">
@@ -55,26 +66,36 @@
             <p class="font-semibold">Home</p>
           </a>
         </div>
+
         <div class="sidebar-group">
+          <!-- Basic.html -->
           <a class="sidebar-item" href="./html/basic.html">
             <i class="fa-solid fa-book"></i>
             <p class="font-semibold">Basic</p>
           </a>
+
+          <!-- Chord.html -->
           <a class="sidebar-item" href="./html/chord.html">
             <i class="fa-solid fa-music"></i>
             <p class="font-semibold">Chord</p>
           </a>
+
+          <!-- Scale.html -->
           <a class="sidebar-item" href="./html/scale.html">
             <i class="fa-solid fa-wave-square"></i>
             <p class="font-semibold">Scale</p>
           </a>
         </div>
+
+        <!-- Model.html -->
         <div class="sidebar-group">
           <a class="sidebar-item" href="./html/model.html">
             <i class="fa-solid fa-guitar"></i>
             <p class="font-semibold">Model</p>
           </a>
         </div>
+
+        <!-- Practice.html -->
         <div class="sidebar-group">
           <a class="sidebar-item" href="./html/practice.html">
             <i class="fa-solid fa-dumbbell"></i>
@@ -85,13 +106,17 @@
     </aside>
 
     <div id="pageContent">
+      <!-- Hero — title + logo watermark -->
       <section
         class="flex flex-col justify-center items-center h-150 md:h-190 bg-[image:var(--grad-card-1)] shadow-[var(--card-sd-3)] title"
       >
-        <h1 class="text-6xl font-bold tracking-wide text-shadow-lg bg-[url('./img/home/imgText1.jpg')] bg-cover bg-clip-text text-transparent">
+        <!-- Image-clipped text for the logo title -->
+        <h1
+          class="text-6xl font-bold tracking-wide text-shadow-lg bg-[url('./img/home/imgText1.jpg')] bg-cover bg-clip-text text-transparent"
+        >
           STRINGO
         </h1>
-        
+
         <p
           class="text-xs sm:text-sm lg:text-base text-center font-semibold tracking-[2px] text-[var(--bg-6)] mt-4"
         >
@@ -99,6 +124,7 @@
         </p>
       </section>
 
+      <!-- Get Started — snap-scroll cards (Basic / Chord / Scale) -->
       <section
         class="flex flex-col justify-center items-center md:h-150 bg-[linear-gradient(var(--overlay-3),var(--overlay-2)),url('./img/home/brownGuitar.jpg')] bg-center bg-cover shadow-[var(--card-sd-3)] px-6 py-12"
       >
@@ -113,20 +139,19 @@
           "Master the foundations of guitar playing."
         </p>
 
+        <!-- Swipe hint -->
         <div
           class="flex items-center justify-end gap-1.5 w-full max-w-2xl mb-3 text-[rgba(255,255,255,0.4)] text-[10px] tracking-[1.5px] uppercase"
         >
           <i class="fa-solid fa-arrow-right text-[10px]"></i> swipe
         </div>
 
+        <!-- Snap scroll track -->
         <div class="scroll-track w-full">
           <a class="snap-card" href="./html/basic.html">
             <h1>01</h1>
             <div class="flex justify-between items-start">
-              <img
-                src="./img/home/basic-1.jpeg"
-                alt="Basic"
-              />
+              <img src="./img/home/basic-1.jpeg" alt="Basic" />
             </div>
 
             <div class="flex flex-1 flex-col gap-2 mx-2 md:mx-3 lg:mx-4">
@@ -142,10 +167,7 @@
           <a class="snap-card" href="./html/chord.html">
             <h1>02</h1>
             <div class="flex justify-between items-start">
-              <img
-                src="./img/home/chord-1.jpeg"
-                alt="Chord"
-              />
+              <img src="./img/home/chord-1.jpeg" alt="Chord" />
             </div>
 
             <div class="flex flex-1 flex-col gap-2 mx-2 md:mx-3 lg:mx-4">
@@ -161,10 +183,7 @@
           <a class="snap-card" href="./html/scale.html">
             <h1>03</h1>
             <div class="flex justify-between items-start">
-              <img
-                src="./img/home/scale-2.jpeg"
-                alt="Scales"
-              />
+              <img src="./img/home/scale-2.jpeg" alt="Scales" />
             </div>
 
             <div class="flex flex-1 flex-col gap-2 mx-2 md:mx-3 lg:mx-4">
@@ -178,6 +197,7 @@
           </a>
         </div>
 
+        <!-- Dot indicators -->
         <div class="flex justify-center gap-1.5 mt-4" id="snapDots">
           <div class="snap-dot active"></div>
           <div class="snap-dot"></div>
@@ -185,6 +205,7 @@
         </div>
       </section>
 
+      <!-- Know More — 2x2 guitar model grid -->
       <section
         class="flex flex-col items-center bg-[linear-gradient(var(--grad-card-1))] shadow-[var(--card-sd-3)] px-6 py-12"
       >
@@ -200,7 +221,9 @@
           "Explore the world of guitars."
         </p>
 
+        <!-- Each item links to a section with ID on model.html -->
         <div class="grid grid-cols-2 w-full h-full gap-1 md:px-10">
+          <!-- Linked to stratocaster section -->
           <a class="guitar-split-item" href="./html/model.html#stratocaster">
             <img src="./img/home/Stratocaster guitar.jpg" alt="Model" />
             <span>Explore</span>
@@ -209,6 +232,8 @@
               <p>“Built for speed and shredding.”</p>
             </div>
           </a>
+
+          <!-- Linked to telecaster section -->
           <a class="guitar-split-item" href="./html/model.html#telecaster">
             <img src="./img/home/Telecaster guitar.jpg" alt="Brand" />
             <span>Explore</span>
@@ -218,6 +243,7 @@
             </div>
           </a>
 
+          <!-- Linked to soloist section -->
           <a class="guitar-split-item" href="./html/model.html#soloist">
             <img src="./img/home/Soloist guitar.jpg" alt="Model" />
             <span>Explore</span>
@@ -226,6 +252,8 @@
               <p>"Precision for performance.”</p>
             </div>
           </a>
+
+          <!-- Linked to flying v section -->
           <a class="guitar-split-item" href="./html/model.html#flyingV">
             <img src="./img/home/Flying V guitar.jpg" alt="Brand" />
             <span>Explore</span>
@@ -237,6 +265,7 @@
         </div>
       </section>
 
+      <!-- Build Your Skills — level links -->
       <section
         class="flex flex-col items-center md:h-180 bg-[linear-gradient(var(--overlay-3),var(--overlay-2)),url('./img/home/bluishGuitar.jpg')] bg-center bg-cover shadow-[var(--card-sd-3)] px-6 py-12"
       >
@@ -252,13 +281,21 @@
           "Practice today, play better tomorrow."
         </p>
 
-        <div class="flex flex-col justify-center w-full max-w-2xl h-full gap-4 md:gap-8">
-          <a class="practice-item beginner" href="./html/practice.html#beginner">
+        <!-- Each item links to a section with ID on practice.html -->
+        <div
+          class="flex flex-col justify-center w-full max-w-2xl h-full gap-4 md:gap-8"
+        >
+          <!-- Beginner -->
+          <a
+            class="practice-item beginner"
+            href="./html/practice.html#beginner"
+          >
             <img src="./img/home/quaver.jpeg" alt="Beginner" />
             <div>
               <h2>
                 <i class="fa-solid fa-play"></i>
-                Beginner</h2>
+                Beginner
+              </h2>
               <p>
                 "Simple drill designed for players just starting their guitar
                 journey."
@@ -266,28 +303,40 @@
             </div>
             <span>Beginner</span>
           </a>
-          <a class="practice-item intermediate" href="./html/practice.html#intermediate">
+
+          <!-- Intermediate -->
+          <a
+            class="practice-item intermediate"
+            href="./html/practice.html#intermediate"
+          >
             <img src="./img/home/intermediate-1.png" alt="Intermediate" />
             <div>
               <h2>
                 <i class="fa-solid fa-list"></i>
-                Intermediate</h2>
+                Intermediate
+              </h2>
               <p>
-                "Take your skills further with practices that challenge rhythm and
-                technique."
+                "Take your skills further with practices that challenge rhythm
+                and technique."
               </p>
             </div>
             <span>Intermediate</span>
           </a>
-          <a class="practice-item advanced" href="./html/practice.html#advanced">
+
+          <!-- Advanced -->
+          <a
+            class="practice-item advanced"
+            href="./html/practice.html#advanced"
+          >
             <img src="./img/home/advanced-1.png" alt="Advanced" />
             <div>
               <h2>
                 <i class="fa-solid fa-fire"></i>
-                Advanced</h2>
+                Advanced
+              </h2>
               <p>
-                "Master complex practices and push your guitar playing to the next
-                level."
+                "Master complex practices and push your guitar playing to the
+                next level."
               </p>
             </div>
             <span>Advanced</span>

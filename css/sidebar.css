@@ -1,8 +1,22 @@
 #topNav {
   top: 0;
-  display: none;
+  display: block;
   z-index: 10;
   transition: top 0.2s ease-in-out;
+}
+
+#hamburgerBtn {
+  display: flex;
+}
+
+@media screen and (min-width: 426px) {
+  #topNav {
+    display: none;
+  }
+
+  #hamburgerBtn {
+  display: none;
+}
 }
 
 aside {

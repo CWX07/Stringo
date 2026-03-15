@@ -1,3 +1,4 @@
+/* Scale cards */
 .scale-group {
   position: relative;
   width: 250px;
@@ -15,19 +16,9 @@
     transform 0.3s ease;
 }
 
+/* Lifts up on hover */
 .scale-group:hover {
   transform: translateY(-4px);
-}
-
-.scale-group::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-
-  background: linear-gradient(to top, transparent 0%, var(--overlay-1) 100%);
-  opacity: 0.8;
-  z-index: 1;
-  transition: background 0.3s ease;
 }
 
 .scale-group div {
@@ -45,6 +36,7 @@
   transform: scale(1.02) translateY(-2px);
 }
 
+/* Ghost number — bottom right of image */
 .scale-group h1 {
   position: absolute;
   bottom: 45px;
@@ -62,6 +54,7 @@
   transition: opacity 0.5s ease;
 }
 
+/* Accent divider line */
 .scale-group span {
   display: block;
   width: 90%;
@@ -69,6 +62,7 @@
   background: var(--grad-acc-1);
 }
 
+/* Scale name */
 .scale-group h2 {
   width: 90%;
   font-family: "Playfair Display", serif;

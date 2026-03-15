@@ -4,17 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/sidebar.css" />
     <link rel="stylesheet" href="../css/home.css" />
     <link rel="stylesheet" href="../css/practice.css" />
 
+    <!-- Font Awesome CDN -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
 
+    <!-- Website icon -->
     <link rel="icon" href="../img/common/logo-white.jpg" type="image/png" />
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <title>Stringo</title>
@@ -36,10 +40,12 @@
       id="sideBar"
       class="fixed top-0 left-0 h-full z-50 overflow-hidden flex flex-col"
     >
+      <!-- Expand / collapse toggle -->
       <button id="sideBarBtn" class="sidebar-toggle">
         <i class="fa-solid fa-angles-right"></i>
       </button>
 
+      <!-- Logo -->
       <div class="sidebar-logo">
         <img src="../img/common/logo-transparent.png" />
         <h1
@@ -49,6 +55,7 @@
         </h1>
       </div>
 
+      <!-- Nav links -->
       <nav class="sidebar-nav">
         <div class="sidebar-group">
           <a class="sidebar-item" href="../index.html">
@@ -56,27 +63,37 @@
             <p class="font-semibold">Home</p>
           </a>
         </div>
+
         <div class="sidebar-group">
+          <!-- basic.html -->
           <a class="sidebar-item" href="./basic.html">
             <i class="fa-solid fa-book"></i>
             <p class="font-semibold">Basic</p>
           </a>
+
+          <!-- chord.html -->
           <a class="sidebar-item" href="./chord.html">
             <i class="fa-solid fa-music"></i>
             <p class="font-semibold">Chord</p>
           </a>
+
+          <!-- scale.html -->
           <a class="sidebar-item" href="./scale.html">
             <i class="fa-solid fa-wave-square"></i>
             <p class="font-semibold">Scale</p>
           </a>
         </div>
+
         <div class="sidebar-group">
+          <!-- model.html -->
           <a class="sidebar-item" href="./model.html">
             <i class="fa-solid fa-guitar"></i>
             <p class="font-semibold">Model</p>
           </a>
         </div>
+
         <div class="sidebar-group">
+          <!-- practice.html -->
           <a class="sidebar-item" href="./practice.html">
             <i class="fa-solid fa-dumbbell"></i>
             <p class="font-semibold">Practice</p>
@@ -86,6 +103,7 @@
     </aside>
 
     <div id="pageContent">
+      <!-- Hero banner -->
       <section
         class="flex flex-col justify-center items-center h-150 md:h-190 bg-[linear-gradient(var(--overlay-1),var(--overlay-3)),url('../img/practice/eGuitarBunch.jpeg')] bg-center bg-cover shadow-[var(--card-sd-3)] p-4"
       >
@@ -102,6 +120,7 @@
         </p>
       </section>
 
+      <!-- Beginner section -->
       <section
         class="flex flex-col items-center bg-[var(--bg-1)] shadow-[var(--card-sd-3)] px-6 py-14"
       >
@@ -139,6 +158,7 @@
           <i class="fa-solid fa-arrow-right text-[10px]"></i> swipe
         </div>
 
+        <!-- Snap scroll track -->
         <div class="scroll-track w-full beginner">
           <div class="practice-card beginner">
             <div class="img-zone">
@@ -205,6 +225,7 @@
           </div>
         </div>
 
+        <!-- Dot indicators -->
         <div class="flex justify-center gap-1.5 mt-4">
           <div class="practice-dot beginner active"></div>
           <div class="practice-dot beginner"></div>
@@ -213,6 +234,7 @@
         </div>
       </section>
 
+      <!-- Intermediate section -->
       <section
         class="flex flex-col items-center bg-[linear-gradient(var(--overlay-2),var(--overlay-3)),url('../img/model/blackGuitar.jpeg')] bg-right md:bg-center bg-cover shadow-[var(--card-sd-3)] px-6 py-14"
         id="intermediate"
@@ -250,6 +272,7 @@
           <i class="fa-solid fa-arrow-right text-[10px]"></i> swipe
         </div>
 
+        <!-- Snap scroll track -->
         <div class="scroll-track w-full intermediate">
           <div class="practice-card intermediate">
             <div class="img-zone">
@@ -328,6 +351,7 @@
           </div>
         </div>
 
+        <!-- Dot indicators -->
         <div class="flex justify-center gap-1.5 mt-4">
           <div class="practice-dot intermediate active"></div>
           <div class="practice-dot intermediate"></div>
@@ -336,6 +360,7 @@
         </div>
       </section>
 
+      <!-- Advanced section -->
       <section
         class="flex flex-col items-center bg-[var(--bg-1)] shadow-[var(--card-sd-3)] px-6 py-14"
         id="advanced"
@@ -372,6 +397,7 @@
           <i class="fa-solid fa-arrow-right text-[10px]"></i> swipe
         </div>
 
+        <!-- Snap scroll track -->
         <div class="scroll-track w-full advanced">
           <div class="practice-card advanced">
             <div class="img-zone">
@@ -438,6 +464,7 @@
           </div>
         </div>
 
+        <!-- Dot indicators -->
         <div class="flex justify-center gap-1.5 mt-4">
           <div class="practice-dot advanced active"></div>
           <div class="practice-dot advanced"></div>

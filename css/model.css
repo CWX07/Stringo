@@ -1,3 +1,6 @@
+/* Model cards - extended from guitar cards */
+
+/* brand-1 = light colour bg sections (Stratocaster, Soloist) */
 .guitar-split-item.brand-1,
 .guitar-split-item.brand-2 {
   width: clamp(260px, 100%, 280px);
@@ -18,6 +21,7 @@
   font-size: 24px;
 } 
 
+/* brand-2 = img bg sections (Telecaster, Flying V) */
 .guitar-split-item.brand-2 {
   border: var(--card-bd-1) var(--white-subtle);
   border-left: 4px solid var(--accent-light);
@@ -29,6 +33,7 @@
     min-height: 300px;
   }
 
+  /* Telecaster uses 3-col layout */
   .guitar-split-item.brand-1.telecaster,
   .guitar-split-item.brand-2.telecaster {
     width: 200px;

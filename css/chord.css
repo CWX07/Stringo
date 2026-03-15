@@ -1,3 +1,4 @@
+/* Chord cards */
 .chord-group {
   position: relative;
   width: 250px;
@@ -16,6 +17,7 @@
     transform 0.3s ease;
 }
 
+/* Lifts up on hover */
 .chord-group:hover {
   transform: translateY(-4px);
 }
@@ -35,6 +37,7 @@
   transform: scale(1.02) translateY(-2px);
 }
 
+/* Ghost number — top right */
 .chord-group span {
   position: absolute;
   top: 10px;
@@ -51,6 +54,7 @@
   letter-spacing: -1px;
 }
 
+/* Bottom info row */
 .chord-group div {
   padding: 14px 18px;
   display: flex;
@@ -73,12 +77,14 @@
   transform: scale(1.04) translate(1px, -1px);
 }
 
+/* Notes row */
 .chord-group div p {
   display: flex;
   justify-content: center;
   gap: 4px;
 }
 
+/* Individual note */
 .chord-group div p span {
   position: relative;
   inset: 0;
@@ -98,6 +104,7 @@
   transition: all 0.3s ease-in-out;
 }
 
+/* Brighten notes container on hover */
 .chord-group:hover div p span {
   background: var(--accent-softer);
   box-shadow: (--card-sd-4);

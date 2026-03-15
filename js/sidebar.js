@@ -1,39 +1,38 @@
-const mobileScreen = window.matchMedia("(max-width: 425px)");
+// Breakpoint for mobile
+const breakPoint = window.matchMedia("(max-width: 425px)");
+
 const hamburgerBtn = document.getElementById("hamburgerBtn");
 const sideBarBtn = document.getElementById("sideBarBtn");
-const topNav = document.getElementById("topNav");
 const sideBar = document.getElementById("sideBar");
 
-// Desktop: toggle expanded/collapsed
+// Desktop: expand / collapse sidebar
 sideBarBtn.addEventListener("click", () => {
   sideBar.classList.toggle("sidebar_open");
 });
 
-// Mobile: toggle sidebar visible/hidden
+// Mobile: show / hide sidebar
 hamburgerBtn.addEventListener("click", () => {
   sideBar.classList.toggle("sidebar_open");
 });
 
-function handleDeviceScreen(e) {
-  if (e.matches) {
-    // Mobile: hide sidebar by default, show hamburger
+// Reset sidebar state on screen size change
+// Change icon based on screen size
+function handleDeviceScreen() {
+  if (breakPoint.matches) {
+    // Mobile: hidden by default, swap icon to X
     sideBar.classList.remove("sidebar_open");
-    hamburgerBtn.style.display = "flex";
     sideBarBtn.innerHTML = '<i class="fa-solid fa-x"></i>';
-    topNav.style.display = "block";
   } else {
-    // Desktop: show sidebar collapsed, hide hamburger
+    // Desktop: collapsed by default, swap icon to arrows
     sideBar.classList.remove("sidebar_open");
-    hamburgerBtn.style.display = "none";
     sideBarBtn.innerHTML = '<i class="fa-solid fa-angles-right"></i>';
-    topNav.style.display = "none";
   }
 }
 
-handleDeviceScreen(mobileScreen);
-mobileScreen.addEventListener("change", handleDeviceScreen);
+handleDeviceScreen();
+breakPoint.addEventListener("change", handleDeviceScreen);
 
-// Active page sidebar-item
+// Highlight active page in sidebar
 const sidebarItem = document.querySelectorAll(".sidebar-item");
 
 sidebarItem.forEach((link) => {

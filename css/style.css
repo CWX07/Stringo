@@ -13,12 +13,12 @@
   --bg-8: rgba(30, 30, 30, 0.9);
   --bg-9: rgba(0, 0, 0, 0.9);
 
-  /* Black overlays — used for image tinting */
+  /* Black overlays — image tinting */
   --overlay-1: rgba(0, 0, 0, 0.2);
   --overlay-2: rgba(0, 0, 0, 0.55);
   --overlay-3: rgba(0, 0, 0, 0.8);
 
-  /* White overlays — used in home.css for card/row hover surfaces */
+  /* White overlays — card / hover surfaces */
   --white-faint: rgba(255, 255, 255, 0.06);
   --white-subtle: rgba(255, 255, 255, 0.1);
   --white-soft: rgba(255, 255, 255, 0.15);
@@ -28,7 +28,8 @@
   --white-muted: rgba(255, 255, 255, 0.65);
   --white-clear: rgba(255, 255, 255, 0.7);
 
-  /* Accent — warm amber, evokes wood, strings, warmth */
+  /* Accent - gold / yellowish themed */
+  /* Light / transparent accent */
   --accent: rgba(200, 134, 10, 1);
   --accent-halfOp: rgba(200, 134, 10, 1);
   --accent-light: rgba(240, 180, 41, 1);
@@ -36,6 +37,7 @@
   --accent-softer: rgba(255, 215, 150, 1);
   --accent-dim: rgba(200, 134, 10, 0.15);
 
+  /* Dark accent */
   --accent-dark: rgba(42, 32, 16, 1);
   --accent-darker: rgba(28, 28, 28, 1);
 
@@ -71,6 +73,7 @@
     var(--bg-4) 100%
   );
 
+  /* Accent gradient — fades in from the sides */
   --grad-acc-1: linear-gradient(
     to right,
     transparent 0%,
@@ -97,6 +100,7 @@
   --sb-fade: opacity 0.2s ease 0.06s, transform 0.2s ease 0.06s;
 }
 
+/* BASE */
 * {
   box-sizing: border-box;
 }
@@ -121,9 +125,10 @@ a {
   text-decoration: none;
 }
 
+/* Page content shifts right to make room for sidebar */
 #pageContent {
   margin-left: 0;
-  margin-top: 48px;
+  margin-top: 48px; /* offset for mobile top nav */
   display: flex;
   flex-direction: column;
   min-height: calc(100vh - 48px);
@@ -134,6 +139,7 @@ a {
 }
 
 @media screen and (min-width: 426px) {
+  /* Desktop: margin-left = collapsed sidebar width */
   #pageContent {
     margin-left: var(--sb-w-collapsed);
     margin-top: 0;
@@ -141,6 +147,7 @@ a {
   }
 }
 
+/* FOOTER */
 footer {
   width: 100%;
 }
@@ -155,6 +162,7 @@ footer h1 {
   opacity: 0.8;
 }
 
+/* SCROLL TRACK — shared snap container */
 .scroll-track {
   width: 90%;
   display: flex;
@@ -164,6 +172,7 @@ footer h1 {
   padding: 15px 4px;
 }
 
+/* Custom scrollbar */
 .scroll-track::-webkit-scrollbar {
   height: 4px;
 }

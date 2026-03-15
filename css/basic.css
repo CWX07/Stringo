@@ -1,3 +1,4 @@
+/* Flash cards — Parts section */
 .flash-container {
   width: 100%;
   display: grid;
@@ -10,10 +11,11 @@
   height: 130px;
   border-radius: 12px;
   box-shadow: var(--card-sd-1);
-  perspective: 1000px;
+  perspective: 1000px; /* enables 3D flip */
   cursor: pointer;
 }
 
+/* Flip wrapper */
 .card-inner {
   position: relative;
   width: 100%;
@@ -22,10 +24,12 @@
   transform-style: preserve-3d;
 }
 
+/* Flipped state — rotates inner 180° */
 .flash-card.flipped .card-inner {
   transform: rotateY(180deg);
 }
 
+/* Front/back styles */
 .card-front,
 .card-back {
   position: absolute;
@@ -34,12 +38,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  backface-visibility: hidden;
+  backface-visibility: hidden; /* hide reverse face */
   border-radius: 12px;
   padding: 16px 18px;
   overflow: hidden;
 }
 
+/* Back face starts rotated */
 .card-back {
   transform: rotateY(180deg);
 }
@@ -50,10 +55,12 @@
   transition: border-color 0.2s ease;
 }
 
+/* Hover highlight on front face only */
 .flash-card:not(.flipped):hover .card-front {
   border-color: rgba(200, 134, 10, 0.55);
 }
 
+/* Ghost number */
 .card-front .ghost-num,
 .card-back .ghost-num {
   position: absolute;
@@ -81,6 +88,7 @@
   margin: auto 0;
 }
 
+/* "tap ↻" hint label */
 .card-front .tap-hint {
   font-size: 9px;
   letter-spacing: 2px;
@@ -129,6 +137,7 @@
   }
 }
 
+/* String info cards — Strings section */
 .string-content {
   min-width: 150px;
   display: flex;
@@ -142,6 +151,7 @@
   padding: 12px 16px;
 }
 
+/* Header numbers */
 .header-num {
   font-family: "Playfair Display", serif;
   font-size: 58px;
@@ -169,6 +179,7 @@
   }
 }
 
+/* Fret cards — Fretboard section */
 .fret-card {
   scroll-snap-align: center;
   flex-shrink: 0;
@@ -189,6 +200,7 @@
   transition: background 0.25s ease;
 }
 
+/* Fret number uses lighter accent */
 .header-num.fret {
   color: var(--accent-light);
 }
@@ -199,6 +211,7 @@
   line-height: 1.5;
 }
 
+/* Arrow icon — at bottom-right */
 .fret-card i {
   position: absolute;
   bottom: 20px;
@@ -215,6 +228,7 @@
   margin-top: 4px;
 }
 
+/* Scroll dot */
 .fret-dot {
   width: 6px;
   height: 6px;
@@ -225,6 +239,7 @@
     background 0.25s ease;
 }
 
+/* Active dot stretches into a pill for current card */
 .fret-dot.active {
   background: var(--accent);
   width: 18px;
