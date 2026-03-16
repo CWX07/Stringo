@@ -16,7 +16,5 @@ tracks.forEach(track => {
       // Sync active dot to current card index
       const idx = Math.round(track.scrollLeft / track.offsetWidth);
       dots.forEach((d, i) => d.classList.toggle("active", i === idx));
-    },
-    { passive: true }
-  );
+    });
 });

@@ -28,5 +28,5 @@ if (fretTrack && fretDots.length) {
     // Sync active dot to current card index
     const idx = Math.round(fretTrack.scrollLeft / fretTrack.clientWidth);
     fretDots.forEach((d, i) => d.classList.toggle("active", i === idx));
-  }, { passive: true });
+  });
 }
