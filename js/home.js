@@ -7,7 +7,7 @@ if (track && dots.length) {
     "scroll",
     () => {
       // Sync active dot to current card index
-      const idx = Math.round(track.scrollLeft / track.clientWidth);
+      const idx = Math.round(track.scrollLeft / track.offsetWidth);
       dots.forEach((d, i) => d.classList.toggle("active", i === idx));
     });
 }

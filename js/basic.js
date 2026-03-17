@@ -26,7 +26,7 @@ const fretDots = document.querySelectorAll("#fretDots .fret-dot");
 if (fretTrack && fretDots.length) {
   fretTrack.addEventListener("scroll", () => {
     // Sync active dot to current card index
-    const idx = Math.round(fretTrack.scrollLeft / fretTrack.clientWidth);
+    const idx = Math.round(fretTrack.scrollLeft / fretTrack.offsetWidth);
     fretDots.forEach((d, i) => d.classList.toggle("active", i === idx));
   });
 }
