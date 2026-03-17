@@ -24,6 +24,11 @@
   transform-style: preserve-3d;
 }
 
+/* Flipped state — rotates inner 180° */
+.flash-card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
 /* Front/back styles */
 .card-front,
 .card-back {
@@ -48,11 +53,6 @@
   background: var(--grad-card-2);
   border: var(--card-bd-1) rgba(200, 134, 10, 0.2);
   transition: border-color 0.2s ease;
-}
-
-/* Hover highlight on front face only */
-.flash-card:not(.flipped):hover.card-front {
-  border-color: rgba(200, 134, 10, 0.55);
 }
 
 /* Ghost number */
