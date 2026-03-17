@@ -24,11 +24,6 @@
   transform-style: preserve-3d;
 }
 
-/* Flipped state — rotates inner 180° */
-.flash-card.flipped .card-inner {
-  transform: rotateY(180deg);
-}
-
 /* Front/back styles */
 .card-front,
 .card-back {
@@ -56,7 +51,7 @@
 }
 
 /* Hover highlight on front face only */
-.flash-card:not(.flipped):hover .card-front {
+.flash-card:not(.flipped):hover.card-front {
   border-color: rgba(200, 134, 10, 0.55);
 }
 
